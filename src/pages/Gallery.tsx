@@ -8,28 +8,44 @@ import villa1 from "@/assets/villa-1.jpg";
 import villa2 from "@/assets/villa-2.jpg";
 import villa3 from "@/assets/villa-3.jpg";
 import villa4 from "@/assets/villa-4.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import heroVilla from "@/assets/hero-villa.jpg";
-import parallaxDining from "@/assets/parallax-dining.jpg";
-import parallaxAerial from "@/assets/parallax-aerial.jpg";
+import villa5 from "@/assets/villa-5.jpg";
+import villa6 from "@/assets/villa-6.jpg";
+import heroSlide1 from "@/assets/hero-slide-1.jpg";
+import heroSlide2 from "@/assets/hero-slide-2.jpg";
+import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import heroSlide4 from "@/assets/hero-slide-4.jpg";
+import villaLiving from "@/assets/villa-living.jpg";
+import villaBedroom from "@/assets/villa-bedroom.jpg";
+import villaBathroom from "@/assets/villa-bathroom.jpg";
+import diningExp from "@/assets/dining-experience.jpg";
+import spaWellness from "@/assets/spa-wellness.jpg";
+import poolBar from "@/assets/pool-bar.jpg";
+import waterSports from "@/assets/water-sports.jpg";
+import coupleBeach from "@/assets/couple-beach.jpg";
+import yogaWellness from "@/assets/yoga-wellness.jpg";
 
-const categories = ["All", "Villas", "Pool", "Beach", "Interiors", "Dining"];
+const categories = ["All", "Villas", "Pool", "Beach", "Interiors", "Dining", "Wellness"];
 
 const images = [
-  { src: heroVilla, category: "Villas", alt: "Beachfront villa at sunset" },
-  { src: villa1, category: "Pool", alt: "Private infinity pool" },
-  { src: villa2, category: "Interiors", alt: "Luxury bedroom suite" },
-  { src: villa3, category: "Villas", alt: "Royal terrace villa" },
-  { src: villa4, category: "Beach", alt: "Beachfront spa pavilion" },
-  { src: gallery1, category: "Interiors", alt: "Tropical living room" },
-  { src: gallery2, category: "Pool", alt: "Pool at night" },
-  { src: gallery3, category: "Beach", alt: "Beach sunrise" },
-  { src: gallery4, category: "Interiors", alt: "Outdoor bathroom" },
-  { src: parallaxDining, category: "Dining", alt: "Candlelit dinner" },
-  { src: parallaxAerial, category: "Villas", alt: "Aerial resort view" },
+  { src: heroSlide1, category: "Pool", alt: "Infinity pool at sunset" },
+  { src: villa1, category: "Villas", alt: "Ocean Breeze Villa" },
+  { src: villaBedroom, category: "Interiors", alt: "Luxury master bedroom" },
+  { src: heroSlide3, category: "Villas", alt: "Aerial resort view" },
+  { src: poolBar, category: "Pool", alt: "Pool bar and lounge" },
+  { src: diningExp, category: "Dining", alt: "Beachside candlelit dinner" },
+  { src: villa2, category: "Villas", alt: "Sunset Haven Suite" },
+  { src: villaLiving, category: "Interiors", alt: "Open-plan living area" },
+  { src: waterSports, category: "Beach", alt: "Water sports adventure" },
+  { src: villa3, category: "Villas", alt: "Royal Terrace Villa" },
+  { src: spaWellness, category: "Wellness", alt: "Spa treatment room" },
+  { src: heroSlide2, category: "Pool", alt: "Night pool ambiance" },
+  { src: villa5, category: "Villas", alt: "Tropical Paradise Villa" },
+  { src: villaBathroom, category: "Interiors", alt: "Luxury spa bathroom" },
+  { src: coupleBeach, category: "Beach", alt: "Romantic beach walk" },
+  { src: villa4, category: "Villas", alt: "Spa Retreat Villa" },
+  { src: yogaWellness, category: "Wellness", alt: "Beach yoga session" },
+  { src: heroSlide4, category: "Dining", alt: "Sunset terrace dining" },
+  { src: villa6, category: "Villas", alt: "Moonlight Villa" },
 ];
 
 const Gallery = () => {
@@ -42,13 +58,12 @@ const Gallery = () => {
     <div className="min-h-screen">
       <Navbar />
 
-      <ParallaxSection image={gallery3} className="pt-40 pb-20">
+      <ParallaxSection image={heroSlide1} className="pt-40 pb-20">
         <SectionHeading subtitle="Gallery" title="Captured Moments" description="A visual journey through the beauty of RiO Pool Villas." light />
       </ParallaxSection>
 
       <section className="section-padding">
         <div className="container-luxury">
-          {/* Filter tabs */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
               <button
@@ -65,7 +80,6 @@ const Gallery = () => {
             ))}
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.map((img, i) => (
               <div
@@ -85,7 +99,6 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Lightbox */}
       {lightbox !== null && (
         <div
           className="fixed inset-0 z-50 bg-navy/90 flex items-center justify-center p-4"
