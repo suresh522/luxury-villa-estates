@@ -14,28 +14,29 @@ interface VillaCardProps {
   area: string;
 }
 
-const VillaCard = ({ title, description, image, price, bedrooms, bathrooms, guests, area }: VillaCardProps) => {
+const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, guests, area }: VillaCardProps) => {
   return (
     <div className="group bg-card rounded-lg overflow-hidden hover-lift" style={{ boxShadow: 'var(--shadow-card)' }}>
-      {/* Image */}
-      <div className="relative overflow-hidden aspect-[4/3]">
-        <img
-          src={image}
-          alt={title}
-          loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-        />
-        <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-1.5 rounded-full text-sm font-body font-semibold">
-          {price}
+      <Link to={`/villa/${id}`}>
+        <div className="relative overflow-hidden aspect-[4/3]">
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-1.5 rounded-full text-sm font-body font-semibold">
+            {price}
+          </div>
         </div>
-      </div>
+      </Link>
 
-      {/* Content */}
       <div className="p-6">
-        <h3 className="font-display text-xl font-semibold text-card-foreground mb-2">{title}</h3>
+        <Link to={`/villa/${id}`}>
+          <h3 className="font-display text-xl font-semibold text-card-foreground mb-2 hover:text-primary transition-colors">{title}</h3>
+        </Link>
         <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{description}</p>
 
-        {/* Features */}
         <div className="grid grid-cols-4 gap-2 mb-6">
           {[
             { icon: Bed, value: bedrooms, label: "Beds" },
@@ -52,9 +53,9 @@ const VillaCard = ({ title, description, image, price, bedrooms, bathrooms, gues
           ))}
         </div>
 
-        <Link to="/contact">
+        <Link to={`/villa/${id}`}>
           <Button variant="outline" className="w-full rounded-full font-body">
-            Enquire Now
+            View Details
           </Button>
         </Link>
       </div>

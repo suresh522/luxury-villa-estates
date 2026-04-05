@@ -8,67 +8,22 @@ import VillaCard from "@/components/VillaCard";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ParallaxSection from "@/components/ParallaxSection";
+import ExperiencesSection from "@/components/ExperiencesSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import GalleryPreviewSection from "@/components/GalleryPreviewSection";
+import { allVillas } from "@/data/villas";
 
-import villa1 from "@/assets/villa-1.jpg";
-import villa2 from "@/assets/villa-2.jpg";
-import villa3 from "@/assets/villa-3.jpg";
-import villa4 from "@/assets/villa-4.jpg";
-import parallaxAerial from "@/assets/parallax-aerial.jpg";
-import parallaxDining from "@/assets/parallax-dining.jpg";
-
-const villas = [
-  {
-    id: "ocean-breeze",
-    title: "Ocean Breeze Villa",
-    description: "A stunning beachfront villa with private infinity pool and unobstructed ocean views.",
-    image: villa1,
-    price: "₹25,000/night",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
-    area: "2500",
-  },
-  {
-    id: "sunset-haven",
-    title: "Sunset Haven Suite",
-    description: "Elegant suite with panoramic sunset views, king bed, and luxurious interiors.",
-    image: villa2,
-    price: "₹18,000/night",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
-    area: "1800",
-  },
-  {
-    id: "royal-terrace",
-    title: "Royal Terrace Villa",
-    description: "Two-story villa with rooftop jacuzzi, private garden, and outdoor dining area.",
-    image: villa3,
-    price: "₹35,000/night",
-    bedrooms: 4,
-    bathrooms: 4,
-    guests: 8,
-    area: "3500",
-  },
-  {
-    id: "spa-retreat",
-    title: "Spa Retreat Villa",
-    description: "Wellness-focused villa with private spa area, meditation garden, and beach access.",
-    image: villa4,
-    price: "₹22,000/night",
-    bedrooms: 2,
-    bathrooms: 3,
-    guests: 4,
-    area: "2200",
-  },
-];
+import poolBar from "@/assets/pool-bar.jpg";
+import coupleBeach from "@/assets/couple-beach.jpg";
 
 const Index = () => {
+  const featuredVillas = allVillas.slice(0, 4);
+
   return (
     <div className="min-h-screen">
       <Navbar />
 
-      {/* Hero */}
+      {/* Hero Slider */}
       <HeroSection />
 
       {/* Featured Villas */}
@@ -80,8 +35,8 @@ const Index = () => {
             description="Hand-crafted villas designed for the discerning traveler. Each villa offers private pools, beachfront access, and world-class amenities."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {villas.map((villa) => (
-              <VillaCard key={villa.id} {...villa} />
+            {featuredVillas.map((villa) => (
+              <VillaCard key={villa.id} {...villa} price={villa.priceLabel} />
             ))}
           </div>
           <div className="text-center mt-12">
@@ -94,8 +49,11 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Experiences Grid */}
+      <ExperiencesSection />
+
       {/* Parallax CTA */}
-      <ParallaxSection image={parallaxAerial}>
+      <ParallaxSection image={poolBar}>
         <div className="text-center max-w-3xl mx-auto">
           <SectionHeading
             subtitle="Your Private Paradise"
@@ -111,21 +69,27 @@ const Index = () => {
         </div>
       </ParallaxSection>
 
+      {/* Why Choose Us */}
+      <WhyChooseUsSection />
+
       {/* Amenities */}
       <AmenitiesSection />
 
-      {/* Parallax Dining */}
-      <ParallaxSection image={parallaxDining}>
+      {/* Gallery Preview */}
+      <GalleryPreviewSection />
+
+      {/* Parallax Lifestyle */}
+      <ParallaxSection image={coupleBeach}>
         <div className="text-center max-w-3xl mx-auto">
           <SectionHeading
-            subtitle="Dining"
-            title="Culinary Excellence"
-            description="From intimate beachside dinners to poolside brunches, our chefs craft exquisite meals using the freshest local ingredients."
+            subtitle="Romance & Celebration"
+            title="Create Timeless Memories"
+            description="From intimate honeymoons to grand celebrations, RiO Pool Villas is the perfect backdrop for life's most precious moments."
             light
           />
           <Link to="/contact">
             <Button size="lg" className="rounded-full px-10 font-body">
-              Reserve a Table
+              Plan Your Event
             </Button>
           </Link>
         </div>
