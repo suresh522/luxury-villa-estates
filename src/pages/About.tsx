@@ -5,6 +5,8 @@ import ParallaxSection from "@/components/ParallaxSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import { Shield, Heart, Leaf, Users, Globe, Sparkles, Award, Star, CheckCircle } from "lucide-react";
 
+import ImageSlider from "@/components/ImageSlider";
+
 import heroSlide4 from "@/assets/hero-slide-4.jpg";
 import villaLiving from "@/assets/villa-living.jpg";
 import teamStaff from "@/assets/team-staff.jpg";
@@ -15,6 +17,16 @@ import diningExp from "@/assets/dining-experience.jpg";
 import conciergeLobby from "@/assets/concierge-lobby.jpg";
 import aerialResort from "@/assets/aerial-resort.jpg";
 import infinityPool from "@/assets/infinity-pool-sunset.jpg";
+import promiseSlide1 from "@/assets/promise-slide-1.jpg";
+import promiseSlide2 from "@/assets/promise-slide-2.jpg";
+import promiseSlide3 from "@/assets/promise-slide-3.jpg";
+
+const promiseImages = [
+  { src: infinityPool, alt: "Infinity pool at sunset" },
+  { src: promiseSlide1, alt: "Luxury villa pool sunset view" },
+  { src: promiseSlide2, alt: "Premium villa bedroom ocean view" },
+  { src: promiseSlide3, alt: "Beachfront spa wellness" },
+];
 
 const About = () => {
   return (

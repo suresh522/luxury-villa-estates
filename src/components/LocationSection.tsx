@@ -1,24 +1,42 @@
 import { MapPin, Clock, Car, Plane } from "lucide-react";
+import ImageSlider from "@/components/ImageSlider";
+
 import aerialResort from "@/assets/aerial-resort.jpg";
+import locationSlide1 from "@/assets/location-slide-1.jpg";
+import locationSlide2 from "@/assets/location-slide-2.jpg";
+import locationSlide3 from "@/assets/location-slide-3.jpg";
+
+const locationImages = [
+  { src: aerialResort, alt: "Aerial view of RiO Pool Villas" },
+  { src: locationSlide1, alt: "Beachfront resort aerial panorama" },
+  { src: locationSlide2, alt: "Luxury coastal resort with infinity pool" },
+  { src: locationSlide3, alt: "Resort entrance at dusk" },
+];
 
 const LocationSection = () => {
   return (
     <section className="section-padding bg-card">
       <div className="container-luxury">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-2xl overflow-hidden" style={{ boxShadow: 'var(--shadow-elevated)' }}>
-          {/* Image side */}
-          <div className="relative min-h-[400px]">
-            <img src={aerialResort} alt="Aerial view of RiO Pool Villas" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/40 to-transparent" />
-            <div className="absolute bottom-8 left-8 right-8">
-              <span className="inline-block bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-                Prime Location
-              </span>
-              <h3 className="text-2xl font-bold text-primary-foreground">
-                Ramapuram Beach, Chirala
-              </h3>
-            </div>
-          </div>
+          {/* Image slider side */}
+          <ImageSlider
+            images={locationImages}
+            interval={4000}
+            className="min-h-[400px]"
+            overlay={
+              <>
+                <div className="absolute inset-0 bg-gradient-to-r from-foreground/40 to-transparent z-[1]" />
+                <div className="absolute bottom-8 left-8 right-8 z-[2]">
+                  <span className="inline-block bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                    Prime Location
+                  </span>
+                  <h3 className="text-2xl font-bold text-primary-foreground">
+                    Ramapuram Beach, Chirala
+                  </h3>
+                </div>
+              </>
+            }
+          />
 
           {/* Info side */}
           <div className="bg-navy p-8 md:p-12 flex flex-col justify-center">
