@@ -11,6 +11,9 @@ import ParallaxSection from "@/components/ParallaxSection";
 import ExperiencesSection from "@/components/ExperiencesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import GalleryPreviewSection from "@/components/GalleryPreviewSection";
+import LifestyleSection from "@/components/LifestyleSection";
+import StatsCounterSection from "@/components/StatsCounterSection";
+import LocationSection from "@/components/LocationSection";
 import { allVillas } from "@/data/villas";
 
 import poolBar from "@/assets/pool-bar.jpg";
@@ -41,13 +44,19 @@ const Index = () => {
           </div>
           <div className="text-center mt-12">
             <Link to="/villas">
-              <Button variant="outline" size="lg" className="rounded-full px-10 font-body">
+              <Button variant="outline" size="lg" className="rounded-full px-10">
                 View All Villas
               </Button>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Lifestyle Bento */}
+      <LifestyleSection />
+
+      {/* Stats Counter */}
+      <StatsCounterSection />
 
       {/* Experiences Grid */}
       <ExperiencesSection />
@@ -62,7 +71,7 @@ const Index = () => {
             light
           />
           <Link to="/about">
-            <Button size="lg" className="rounded-full px-10 font-body">
+            <Button size="lg" className="rounded-full px-10">
               Discover Our Story
             </Button>
           </Link>
@@ -78,6 +87,9 @@ const Index = () => {
       {/* Gallery Preview */}
       <GalleryPreviewSection />
 
+      {/* Location */}
+      <LocationSection />
+
       {/* Parallax Lifestyle */}
       <ParallaxSection image={coupleBeach}>
         <div className="text-center max-w-3xl mx-auto">
@@ -88,7 +100,7 @@ const Index = () => {
             light
           />
           <Link to="/contact">
-            <Button size="lg" className="rounded-full px-10 font-body">
+            <Button size="lg" className="rounded-full px-10">
               Plan Your Event
             </Button>
           </Link>
@@ -101,7 +113,7 @@ const Index = () => {
       {/* Final CTA */}
       <section className="section-padding bg-primary">
         <div className="container-luxury text-center">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-4">
             Ready for Paradise?
           </h2>
           <p className="text-primary-foreground/70 max-w-xl mx-auto mb-8">
@@ -109,12 +121,12 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="rounded-full px-10 font-body">
+              <Button size="lg" variant="secondary" className="rounded-full px-10">
                 Book Now
               </Button>
             </Link>
             <a href="tel:+919988886888">
-              <Button size="lg" variant="outline" className="rounded-full px-10 font-body border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" variant="outline" className="rounded-full px-10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 Call +91 99 8888 6888
               </Button>
             </a>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -48,8 +48,8 @@
     --navy: 210 50% 12%;
     --cream: 40 30% 97%;
 
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    --font-display: 'Montserrat', system-ui, sans-serif;
+    --font-body: 'Montserrat', system-ui, sans-serif;
 
     --shadow-soft: 0 4px 30px hsla(197, 72%, 54%, 0.08);
     --shadow-elevated: 0 20px 60px hsla(210, 25%, 15%, 0.1);
