@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import rioLogo from "@/assets/rio-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -28,27 +29,18 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-card/95 shadow-lg backdrop-blur-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-card/95 shadow-lg backdrop-blur-md py-2"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="container-luxury flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <span
-            className={`font-display text-2xl md:text-3xl font-bold tracking-tight transition-colors ${
-              scrolled ? "text-primary" : "text-primary-foreground"
-            }`}
-          >
-            RiO
-          </span>
-          <span
-            className={`font-body text-xs uppercase tracking-[0.3em] transition-colors ${
-              scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-            }`}
-          >
-            Pool Villas
-          </span>
+        <Link to="/" className="flex items-center">
+          <img
+            src={rioLogo}
+            alt="RiO Pool Villas"
+            className="h-12 md:h-14 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -57,7 +49,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary ${
+              className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
                 location.pathname === link.to
                   ? scrolled
                     ? "text-primary"
@@ -84,7 +76,7 @@ const Navbar = () => {
             +91 99 8888 6888
           </a>
           <Link to="/contact">
-            <Button variant="default" size="sm" className="rounded-full px-6 font-body">
+            <Button variant="default" size="sm" className="rounded-full px-6">
               Book Now
             </Button>
           </Link>
@@ -107,7 +99,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`block text-lg font-display ${
+                className={`block text-lg font-semibold uppercase tracking-wide ${
                   location.pathname === link.to ? "text-primary" : "text-foreground/80"
                 }`}
               >
@@ -119,7 +111,7 @@ const Navbar = () => {
                 <Phone className="w-4 h-4" /> +91 99 8888 6888
               </a>
               <Link to="/contact">
-                <Button className="w-full rounded-full font-body">Book Now</Button>
+                <Button className="w-full rounded-full">Book Now</Button>
               </Link>
             </div>
           </div>

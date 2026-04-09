@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
+import rioLogo from "@/assets/rio-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold mb-4">
-              RiO <span className="text-primary text-sm uppercase tracking-[0.3em]">Pool Villas</span>
-            </h3>
+            <img src={rioLogo} alt="RiO Pool Villas" className="h-16 w-auto object-contain mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
               Experience the ultimate luxury beachfront living at Chirala's finest pool villas resort.
             </p>
@@ -25,7 +24,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Explore</h4>
+            <h4 className="text-lg font-bold uppercase tracking-wider mb-6">Explore</h4>
             <div className="space-y-3">
               {[
                 { to: "/villas", label: "Our Villas" },
@@ -42,7 +41,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Experiences</h4>
+            <h4 className="text-lg font-bold uppercase tracking-wider mb-6">Experiences</h4>
             <div className="space-y-3 text-sm text-primary-foreground/60">
               <p>Private Pool Villas</p>
               <p>Beach Activities</p>
@@ -54,7 +53,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Contact Us</h4>
+            <h4 className="text-lg font-bold uppercase tracking-wider mb-6">Contact Us</h4>
             <div className="space-y-4">
               <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
