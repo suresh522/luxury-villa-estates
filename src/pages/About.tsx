@@ -160,8 +160,8 @@ const About = () => {
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <img src={infinityPool} alt="Luxury commitment" loading="lazy" className="rounded-2xl w-full" style={{ boxShadow: 'var(--shadow-elevated)' }} />
+            <div className="relative rounded-2xl overflow-hidden" style={{ boxShadow: 'var(--shadow-elevated)' }}>
+              <ImageSlider images={promiseImages} interval={5000} className="aspect-[4/3]" />
             </div>
           </div>
         </div>
