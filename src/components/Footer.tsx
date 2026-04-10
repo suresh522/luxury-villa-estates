@@ -32,6 +32,7 @@ const Footer = () => {
                 { to: "/dining", label: "Dining" },
                 { to: "/spa", label: "Spa & Wellness" },
                 { to: "/gallery", label: "Gallery" },
+                { to: "/amenities", label: "Amenities" },
                 { to: "/about", label: "About Us" },
                 { to: "/contact", label: "Contact" },
               ].map((link) => (

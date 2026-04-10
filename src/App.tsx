@@ -12,31 +12,36 @@ import Contact from "./pages/Contact.tsx";
 import Dining from "./pages/Dining.tsx";
 import Spa from "./pages/Spa.tsx";
 import Experiences from "./pages/Experiences.tsx";
+import Amenities from "./pages/Amenities.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/villas" element={<Villas />} />
-          <Route path="/villa/:id" element={<VillaDetail />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/dining" element={<Dining />} />
-          <Route path="/spa" element={<Spa />} />
-          <Route path="/experiences" element={<Experiences />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/villas" element={<Villas />} />
+            <Route path="/villa/:id" element={<VillaDetail />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/dining" element={<Dining />} />
+            <Route path="/spa" element={<Spa />} />
+            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/amenities" element={<Amenities />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
