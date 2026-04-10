@@ -31,6 +31,9 @@ const Index = () => {
       {/* Hero Slider */}
       <HeroSection />
 
+      {/* About Preview */}
+      <AboutPreviewSection />
+
       {/* Featured Villas */}
       <section className="section-padding">
         <div className="container-luxury">
@@ -53,6 +56,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Villa Infinite Slider */}
+      <VillaSliderSection />
 
       {/* Lifestyle Bento */}
       <LifestyleSection />
