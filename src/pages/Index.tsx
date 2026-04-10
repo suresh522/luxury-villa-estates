@@ -14,6 +14,8 @@ import GalleryPreviewSection from "@/components/GalleryPreviewSection";
 import LifestyleSection from "@/components/LifestyleSection";
 import StatsCounterSection from "@/components/StatsCounterSection";
 import LocationSection from "@/components/LocationSection";
+import AboutPreviewSection from "@/components/AboutPreviewSection";
+import VillaSliderSection from "@/components/VillaSliderSection";
 import { allVillas } from "@/data/villas";
 
 import poolBar from "@/assets/pool-bar.jpg";
