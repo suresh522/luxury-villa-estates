@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import {
   Waves, UtensilsCrossed, Sparkles, Dumbbell, Wifi, Car, ShieldCheck, Palmtree,
   Sun, Wind, Tv, Coffee, Shirt, Baby, Gamepad2, Music, Camera, Glasses,
-  ChevronRight, Check
+  Check
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
