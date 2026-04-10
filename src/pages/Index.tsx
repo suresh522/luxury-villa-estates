@@ -14,6 +14,8 @@ import GalleryPreviewSection from "@/components/GalleryPreviewSection";
 import LifestyleSection from "@/components/LifestyleSection";
 import StatsCounterSection from "@/components/StatsCounterSection";
 import LocationSection from "@/components/LocationSection";
+import AboutPreviewSection from "@/components/AboutPreviewSection";
+import VillaSliderSection from "@/components/VillaSliderSection";
 import { allVillas } from "@/data/villas";
 
 import poolBar from "@/assets/pool-bar.jpg";
@@ -28,6 +30,9 @@ const Index = () => {
 
       {/* Hero Slider */}
       <HeroSection />
+
+      {/* About Preview */}
+      <AboutPreviewSection />
 
       {/* Featured Villas */}
       <section className="section-padding">
@@ -51,6 +56,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Villa Infinite Slider */}
+      <VillaSliderSection />
 
       {/* Lifestyle Bento */}
       <LifestyleSection />

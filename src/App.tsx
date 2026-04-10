@@ -9,6 +9,9 @@ import VillaDetail from "./pages/VillaDetail.tsx";
 import Gallery from "./pages/Gallery.tsx";
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
+import Dining from "./pages/Dining.tsx";
+import Spa from "./pages/Spa.tsx";
+import Experiences from "./pages/Experiences.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -26,6 +29,9 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/spa" element={<Spa />} />
+          <Route path="/experiences" element={<Experiences />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

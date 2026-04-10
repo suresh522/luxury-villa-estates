@@ -28,6 +28,9 @@ const Footer = () => {
             <div className="space-y-3">
               {[
                 { to: "/villas", label: "Our Villas" },
+                { to: "/experiences", label: "Experiences" },
+                { to: "/dining", label: "Dining" },
+                { to: "/spa", label: "Spa & Wellness" },
                 { to: "/gallery", label: "Gallery" },
                 { to: "/about", label: "About Us" },
                 { to: "/contact", label: "Contact" },

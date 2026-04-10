@@ -7,6 +7,9 @@ import rioLogo from "@/assets/rio-logo.png";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/villas", label: "Our Villas" },
+  { to: "/experiences", label: "Experiences" },
+  { to: "/dining", label: "Dining" },
+  { to: "/spa", label: "Spa" },
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
