@@ -29,6 +29,7 @@ const Footer = () => {
               {[
                 { to: "/villas", label: "Our Villas" },
                 { to: "/experiences", label: "Experiences" },
+                { to: "/adventures", label: "Adventure Sports" },
                 { to: "/dining", label: "Dining" },
                 { to: "/spa", label: "Spa & Wellness" },
                 { to: "/gallery", label: "Gallery" },
@@ -45,13 +46,18 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold uppercase tracking-wider mb-6">Experiences</h4>
-            <div className="space-y-3 text-sm text-primary-foreground/60">
-              <p>Private Pool Villas</p>
-              <p>Beach Activities</p>
-              <p>Spa & Wellness</p>
-              <p>Fine Dining</p>
-              <p>Event Hosting</p>
+            <h4 className="text-lg font-bold uppercase tracking-wider mb-6">Services</h4>
+            <div className="space-y-3">
+              {[
+                { to: "/wedding-events", label: "Weddings & Events" },
+                { to: "/honeymoon", label: "Honeymoon Packages" },
+                { to: "/kids-activities", label: "Kids Activities" },
+                { to: "/transfers", label: "Airport Transfers" },
+              ].map((link) => (
+                <Link key={link.to} to={link.to} className="block text-sm text-primary-foreground/60 hover:text-primary transition-colors">
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 

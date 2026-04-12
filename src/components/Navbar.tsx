@@ -1,20 +1,86 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import rioLogo from "@/assets/rio-logo.png";
 
-const navLinks = [
+interface NavItem {
+  to?: string;
+  label: string;
+  children?: { to: string; label: string }[];
+}
+
+const navLinks: NavItem[] = [
   { to: "/", label: "Home" },
   { to: "/villas", label: "Our Villas" },
-  { to: "/experiences", label: "Experiences" },
+  {
+    label: "Experiences",
+    children: [
+      { to: "/experiences", label: "All Experiences" },
+      { to: "/adventures", label: "Adventure & Water Sports" },
+      { to: "/kids-activities", label: "Kids Activities" },
+    ],
+  },
   { to: "/dining", label: "Dining" },
   { to: "/spa", label: "Spa" },
   { to: "/gallery", label: "Gallery" },
   { to: "/amenities", label: "Amenities" },
+  {
+    label: "Events",
+    children: [
+      { to: "/wedding-events", label: "Weddings & Events" },
+      { to: "/honeymoon", label: "Honeymoon Packages" },
+    ],
+  },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
 ];
+
+const DropdownMenu = ({ item, scrolled, pathname }: { item: NavItem; scrolled: boolean; pathname: string }) => {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
+  const isActive = item.children?.some((c) => c.to === pathname);
+
+  return (
+    <div ref={ref} className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <button
+        onClick={() => setOpen(!open)}
+        className={`flex items-center gap-1 text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
+          isActive
+            ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-accent"
+            : scrolled ? "text-foreground/80" : "text-primary-foreground/80"
+        }`}
+      >
+        {item.label}
+        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="absolute top-full left-0 mt-2 w-56 bg-card/98 backdrop-blur-xl rounded-xl shadow-xl border border-border py-2 animate-fade-in-up z-50">
+          {item.children!.map((child) => (
+            <Link
+              key={child.to}
+              to={child.to}
+              onClick={() => setOpen(false)}
+              className={`block px-5 py-2.5 text-sm font-medium transition-colors hover:bg-primary/10 hover:text-primary ${
+                pathname === child.to ? "text-primary bg-primary/5" : "text-foreground/80"
+              }`}
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +105,7 @@ const Navbar = () => {
     >
       <div className="container-luxury flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center mr-8">
           <img
             src={rioLogo}
             alt="RiO Pool Villas"
@@ -48,28 +114,43 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
-                location.pathname === link.to
-                  ? scrolled
-                    ? "text-primary"
-                    : "text-primary-foreground border-b-2 border-accent"
-                  : scrolled
-                  ? "text-foreground/80"
-                  : "text-primary-foreground/80"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden lg:flex items-center gap-6 flex-1">
+          {navLinks.map((link) =>
+            link.children ? (
+              <DropdownMenu key={link.label} item={link} scrolled={scrolled} pathname={location.pathname} />
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to!}
+                className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
+                  location.pathname === link.to
+                    ? scrolled
+                      ? "text-primary"
+                      : "text-primary-foreground border-b-2 border-accent"
+                    : scrolled
+                    ? "text-foreground/80"
+                    : "text-primary-foreground/80"
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
 
         {/* CTA + phone */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3 ml-6">
+          <Link
+            to="/contact"
+            className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
+              location.pathname === "/contact"
+                ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-accent"
+                : scrolled ? "text-foreground/80" : "text-primary-foreground/80"
+            }`}
+          >
+            Contact
+          </Link>
+          <span className={`mx-1 text-sm ${scrolled ? "text-border" : "text-primary-foreground/30"}`}>|</span>
           <a
             href="tel:+919988886888"
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
@@ -79,7 +160,7 @@ const Navbar = () => {
             <Phone className="w-4 h-4" />
             +91 99 8888 6888
           </a>
-          <Link to="/contact">
+          <Link to="/contact" className="ml-3">
             <Button variant="default" size="sm" className="rounded-full px-6">
               Book Now
             </Button>
@@ -97,19 +178,31 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden bg-card/98 backdrop-blur-lg border-t border-border animate-fade-in-up">
-          <div className="px-6 py-6 space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`block text-lg font-semibold uppercase tracking-wide ${
-                  location.pathname === link.to ? "text-primary" : "text-foreground/80"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+        <div className="lg:hidden bg-card/98 backdrop-blur-lg border-t border-border animate-fade-in-up max-h-[80vh] overflow-y-auto">
+          <div className="px-6 py-6 space-y-3">
+            {navLinks.map((link) =>
+              link.children ? (
+                <MobileDropdown key={link.label} item={link} pathname={location.pathname} />
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to!}
+                  className={`block text-lg font-semibold uppercase tracking-wide ${
+                    location.pathname === link.to ? "text-primary" : "text-foreground/80"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+            <Link
+              to="/contact"
+              className={`block text-lg font-semibold uppercase tracking-wide ${
+                location.pathname === "/contact" ? "text-primary" : "text-foreground/80"
+              }`}
+            >
+              Contact
+            </Link>
             <div className="pt-4 border-t border-border">
               <a href="tel:+919988886888" className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <Phone className="w-4 h-4" /> +91 99 8888 6888
@@ -122,6 +215,36 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+  );
+};
+
+const MobileDropdown = ({ item, pathname }: { item: NavItem; pathname: string }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div>
+      <button
+        onClick={() => setOpen(!open)}
+        className={`flex items-center justify-between w-full text-lg font-semibold uppercase tracking-wide ${
+          item.children?.some((c) => c.to === pathname) ? "text-primary" : "text-foreground/80"
+        }`}
+      >
+        {item.label}
+        <ChevronDown className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="pl-4 mt-2 space-y-2 border-l-2 border-primary/20">
+          {item.children!.map((child) => (
+            <Link
+              key={child.to}
+              to={child.to}
+              className={`block text-base font-medium ${pathname === child.to ? "text-primary" : "text-muted-foreground"}`}
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };
 
