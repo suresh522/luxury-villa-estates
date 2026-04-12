@@ -105,7 +105,7 @@ const Navbar = () => {
     >
       <div className="container-luxury flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center mr-8">
+        <Link to="/" className="flex items-center mr-12">
           <img
             src={rioLogo}
             alt="RiO Pool Villas"
@@ -114,7 +114,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-6 flex-1">
+        <div className="hidden lg:flex items-center gap-8 flex-1">
           {navLinks.map((link) =>
             link.children ? (
               <DropdownMenu key={link.label} item={link} scrolled={scrolled} pathname={location.pathname} />
@@ -139,7 +139,7 @@ const Navbar = () => {
         </div>
 
         {/* CTA + phone */}
-        <div className="hidden lg:flex items-center gap-3 ml-6">
+        <div className="hidden lg:flex items-center gap-5 ml-8">
           <Link
             to="/contact"
             className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
@@ -150,7 +150,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <span className={`mx-1 text-sm ${scrolled ? "text-border" : "text-primary-foreground/30"}`}>|</span>
+          <span className={`mx-2 text-sm ${scrolled ? "text-border" : "text-primary-foreground/30"}`}>|</span>
           <a
             href="tel:+919988886888"
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
@@ -160,7 +160,7 @@ const Navbar = () => {
             <Phone className="w-4 h-4" />
             +91 99 8888 6888
           </a>
-          <Link to="/contact" className="ml-3">
+          <Link to="/contact" className="ml-5">
             <Button variant="default" size="sm" className="rounded-full px-6">
               Book Now
             </Button>
