@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
-import { Shield, Heart, Leaf, Users, Globe, Sparkles, Award, Star, CheckCircle } from "lucide-react";
+import { Shield, Heart, Leaf, Users, Globe, Sparkles, Award, Star, CheckCircle, Quote } from "lucide-react";
 
 import ImageSlider from "@/components/ImageSlider";
 
@@ -20,6 +20,7 @@ import infinityPool from "@/assets/infinity-pool-sunset.jpg";
 import promiseSlide1 from "@/assets/promise-slide-1.jpg";
 import promiseSlide2 from "@/assets/promise-slide-2.jpg";
 import promiseSlide3 from "@/assets/promise-slide-3.jpg";
+import founderPortrait from "@/assets/founder-portrait.jpg";
 
 const promiseImages = [
   { src: infinityPool, alt: "Infinity pool at sunset" },
@@ -217,6 +218,49 @@ const About = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="section-padding">
+        <div className="container-luxury">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <img src={founderPortrait} alt="Founder of RiO Pool Villas" loading="lazy" className="rounded-2xl w-full" style={{ boxShadow: 'var(--shadow-elevated)' }} />
+              <div className="absolute -bottom-4 -left-4 bg-primary text-primary-foreground p-5 rounded-2xl hidden md:block">
+                <p className="text-sm font-bold">Founder & CEO</p>
+                <p className="text-xs opacity-80">Since 2020</p>
+              </div>
+            </div>
+            <div>
+              <span className="text-primary text-xs font-bold uppercase tracking-[0.3em]">Meet Our Founder</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6">
+                A Passion for <span className="text-gradient">Exceptional Hospitality</span>
+              </h2>
+              <div className="relative mb-6">
+                <Quote className="w-8 h-8 text-primary/30 absolute -top-2 -left-2" />
+                <p className="text-muted-foreground leading-relaxed italic pl-8">
+                  "I envisioned RiO Pool Villas as more than just a resort — it's a place where families create unforgettable memories, couples rekindle their romance, and every guest feels the warmth of true Indian hospitality."
+                </p>
+              </div>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>With over two decades of experience in the hospitality industry, our founder transformed a stretch of pristine Chirala coastline into one of Andhra Pradesh's most sought-after luxury destinations.</p>
+                <p>His vision combines world-class amenities with the authentic charm of coastal Andhra, ensuring every guest experiences the perfect blend of luxury and local culture.</p>
+              </div>
+              <div className="flex gap-8 mt-8 pt-8 border-t border-border">
+                {[
+                  { value: "20+", label: "Years in Hospitality" },
+                  { value: "50+", label: "Team Members" },
+                  { value: "3", label: "Industry Awards" },
+                ].map((stat) => (
+                  <div key={stat.label}>
+                    <p className="text-2xl font-extrabold text-primary">{stat.value}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
