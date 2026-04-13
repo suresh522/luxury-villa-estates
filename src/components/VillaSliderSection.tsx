@@ -8,24 +8,30 @@ import SectionHeading from "@/components/SectionHeading";
 const VillaSliderSection = () => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const trackRef = useRef<HTMLDivElement>(null);
   const villas = allVillas;
 
   const next = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrent((prev) => (prev + 1) % villas.length);
-  }, [villas.length]);
+    setTimeout(() => setIsTransitioning(false), 700);
+  }, [villas.length, isTransitioning]);
 
   const prev = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrent((p) => (p - 1 + villas.length) % villas.length);
-  }, [villas.length]);
+    setTimeout(() => setIsTransitioning(false), 700);
+  }, [villas.length, isTransitioning]);
 
   useEffect(() => {
     if (isPaused) return;
-    const timer = setInterval(next, 4000);
+    const timer = setInterval(next, 3500);
     return () => clearInterval(timer);
   }, [next, isPaused]);
 
-  // Show 3 cards at a time on desktop, wrapping infinitely
   const getIndex = (offset: number) => (current + offset) % villas.length;
 
   return (
@@ -67,8 +73,9 @@ const VillaSliderSection = () => {
             return (
               <Link
                 to={`/villa/${villa.id}`}
-                key={`${villa.id}-${offset}`}
-                className="group block"
+                key={`${current}-${offset}`}
+                className="group block animate-fade-in-up"
+                style={{ animationDuration: '0.6s' }}
               >
                 <div className="relative rounded-2xl overflow-hidden aspect-[3/4]">
                   <img
