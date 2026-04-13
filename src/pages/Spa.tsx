@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
@@ -43,6 +44,12 @@ const treatments = [
 const Spa = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Luxury Spa & Wellness — RiO Pool Villas Chirala | Rejuvenate by the Ocean</title>
+        <meta name="description" content="Indulge in luxury spa treatments and wellness therapies at RiO Pool Villas. Ocean massage, Ayurvedic therapy, yoga sessions, and holistic wellness on Chirala beach." />
+        <meta name="keywords" content="luxury spa Chirala, wellness resort Andhra Pradesh, ocean massage, Ayurvedic spa India, yoga retreat beach, spa treatments resort" />
+        <link rel="canonical" href="https://riopoolvillas.com/spa" />
+      </Helmet>
       <Navbar />
 
       <ParallaxSection image={spaWellness} className="pt-40 pb-20">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useState, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { Bed, Bath, Users, Maximize, ChevronLeft, ChevronRight, Check, Calendar, Phone, Mail } from "lucide-react";
@@ -48,6 +49,12 @@ const VillaDetail = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{villa.title} — RiO Pool Villas Chirala | Luxury Private Pool Villa</title>
+        <meta name="description" content={`Book ${villa.title} at RiO Pool Villas Chirala — ${villa.description} ${villa.bedrooms} bedrooms, ${villa.bathrooms} bathrooms, up to ${villa.guests} guests. Starting ${villa.priceLabel}.`} />
+        <meta name="keywords" content={`${villa.title}, luxury villa Chirala, private pool villa booking, beachfront villa Andhra Pradesh, ${villa.features.slice(0, 4).join(', ')}`} />
+        <link rel="canonical" href={`https://riopoolvillas.com/villa/${villa.id}`} />
+      </Helmet>
       <Navbar />
 
       {/* Gallery */}

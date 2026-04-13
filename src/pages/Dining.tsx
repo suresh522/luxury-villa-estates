@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
@@ -39,6 +40,12 @@ const menus = [
 const Dining = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Fine Dining & Restaurants — RiO Pool Villas Chirala | Farm-to-Table</title>
+        <meta name="description" content="Experience world-class farm-to-table dining at RiO Pool Villas. Beachfront restaurant, private dining, poolside bar, and curated culinary experiences in Chirala, AP." />
+        <meta name="keywords" content="fine dining Chirala, beachfront restaurant Andhra Pradesh, luxury resort dining, farm to table resort India, pool bar villa, private dining experience" />
+        <link rel="canonical" href="https://riopoolvillas.com/dining" />
+      </Helmet>
       <Navbar />
 
       <ParallaxSection image={beachDining} className="pt-40 pb-20">
