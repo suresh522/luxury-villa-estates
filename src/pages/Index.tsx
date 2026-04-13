@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
@@ -26,6 +27,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>RiO Pool Villas — Luxury Beachfront Private Pool Villas in Chirala, AP</title>
+        <meta name="description" content="Experience luxury beachfront private pool villas at RiO Pool Villas, Chirala. Premium resort with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
+        <meta name="keywords" content="luxury pool villas Chirala, beachfront resort Andhra Pradesh, private pool villas India, RiO Pool Villas, beach resort near Hyderabad, infinity pool resort, honeymoon resort Chirala, family resort beach India, Ramapuram Beach resort, luxury holiday destination India, best resort in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury resort, romantic getaway India, pool villa near Vijayawada, boutique resort AP, beach holiday India, oceanview villa, exclusive beach resort" />
+        <link rel="canonical" href="https://riopoolvillas.com/" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Slider */}
