@@ -73,8 +73,9 @@ const VillaSliderSection = () => {
             return (
               <Link
                 to={`/villa/${villa.id}`}
-                key={`${villa.id}-${offset}`}
-                className="group block"
+                key={`${current}-${offset}`}
+                className="group block animate-fade-in-up"
+                style={{ animationDuration: '0.6s' }}
               >
                 <div className="relative rounded-2xl overflow-hidden aspect-[3/4]">
                   <img
