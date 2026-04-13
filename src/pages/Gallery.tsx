@@ -57,6 +57,12 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Photo Gallery — RiO Pool Villas Chirala | Luxury Resort Images</title>
+        <meta name="description" content="Browse stunning photos of RiO Pool Villas — luxury beachfront villas, private pools, ocean views, fine dining, and spa in Chirala, Andhra Pradesh." />
+        <meta name="keywords" content="RiO Pool Villas photos, luxury resort gallery, beachfront villa images, Chirala resort pictures, pool villa gallery India" />
+        <link rel="canonical" href="https://riopoolvillas.com/gallery" />
+      </Helmet>
       <Navbar />
 
       <ParallaxSection image={heroSlide1} className="pt-40 pb-20">

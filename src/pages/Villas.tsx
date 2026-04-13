@@ -11,6 +11,12 @@ import heroSlide3 from "@/assets/hero-slide-3.jpg";
 const Villas = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Luxury Pool Villas Collection — RiO Pool Villas Chirala | Book Now</title>
+        <meta name="description" content="Browse our handpicked collection of luxury private pool villas in Chirala. Beachfront villas with infinity pools, ocean views, 2-4 bedrooms. Book your dream villa at RiO Pool Villas." />
+        <meta name="keywords" content="luxury pool villas Chirala, private pool villa booking, beachfront villa Andhra Pradesh, villa with infinity pool, premium villa accommodation, ocean view villa India" />
+        <link rel="canonical" href="https://riopoolvillas.com/villas" />
+      </Helmet>
       <Navbar />
 
       <ParallaxSection image={heroSlide3} className="pt-40 pb-20">

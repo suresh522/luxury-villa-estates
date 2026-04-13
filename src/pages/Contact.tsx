@@ -39,6 +39,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contact & Book — RiO Pool Villas Chirala | Enquiry & Reservations</title>
+        <meta name="description" content="Contact RiO Pool Villas for bookings, enquiries, and reservations. Luxury beachfront pool villas in Chirala, Andhra Pradesh. Call +91 99 8888 6888 or email us." />
+        <meta name="keywords" content="book luxury villa Chirala, RiO Pool Villas contact, resort reservation Andhra Pradesh, beach villa enquiry, luxury stay booking India" />
+        <link rel="canonical" href="https://riopoolvillas.com/contact" />
+      </Helmet>
       <Navbar />
 
       <ParallaxSection image={parallaxDining} className="pt-40 pb-20">
