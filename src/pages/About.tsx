@@ -21,10 +21,6 @@ import promiseSlide1 from "@/assets/promise-slide-1.jpg";
 import promiseSlide2 from "@/assets/promise-slide-2.jpg";
 import promiseSlide3 from "@/assets/promise-slide-3.jpg";
 import founderPortrait from "@/assets/founder-portrait.jpg";
-import infinityPool from "@/assets/infinity-pool-sunset.jpg";
-import promiseSlide1 from "@/assets/promise-slide-1.jpg";
-import promiseSlide2 from "@/assets/promise-slide-2.jpg";
-import promiseSlide3 from "@/assets/promise-slide-3.jpg";
 
 const promiseImages = [
   { src: infinityPool, alt: "Infinity pool at sunset" },
