@@ -63,14 +63,14 @@ const DropdownMenu = ({ item, scrolled, pathname }: { item: NavItem; scrolled: b
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
-        <div className="absolute top-full left-0 mt-2 w-56 bg-card/98 backdrop-blur-xl rounded-xl shadow-xl border border-border py-2 animate-fade-in-up z-50">
+        <div className="absolute top-full left-0 mt-2 w-56 bg-navy backdrop-blur-xl rounded-xl shadow-xl border border-white/10 py-2 animate-fade-in-up z-50">
           {item.children!.map((child) => (
             <Link
               key={child.to}
               to={child.to}
               onClick={() => setOpen(false)}
-              className={`block px-5 py-2.5 text-sm font-medium transition-colors hover:bg-primary/10 hover:text-primary ${
-                pathname === child.to ? "text-primary bg-primary/5" : "text-foreground/80"
+              className={`block px-5 py-2.5 text-sm font-medium transition-colors hover:bg-primary/20 hover:text-primary ${
+                pathname === child.to ? "text-primary bg-primary/10" : "text-primary-foreground/80"
               }`}
             >
               {child.label}
@@ -109,7 +109,8 @@ const Navbar = () => {
           <img
             src={rioLogo}
             alt="RiO Pool Villas"
-            className="h-12 md:h-14 w-auto object-contain"
+            className="h-12 md:h-14 w-auto object-contain brightness-0 invert"
+            style={{ filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
           />
         </Link>
 
