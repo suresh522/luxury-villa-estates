@@ -63,7 +63,8 @@ const DropdownMenu = ({ item, scrolled, pathname }: { item: NavItem; scrolled: b
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
-        <div className="absolute top-full left-0 mt-2 w-56 bg-navy backdrop-blur-xl rounded-xl shadow-xl border border-white/10 py-2 animate-fade-in-up z-50">
+        <div className="absolute top-full left-0 pt-2 w-56 z-50">
+          <div className="bg-navy backdrop-blur-xl rounded-xl shadow-xl border border-white/10 py-2 animate-fade-in-up">
           {item.children!.map((child) => (
             <Link
               key={child.to}
@@ -76,6 +77,7 @@ const DropdownMenu = ({ item, scrolled, pathname }: { item: NavItem; scrolled: b
               {child.label}
             </Link>
           ))}
+          </div>
         </div>
       )}
     </div>
