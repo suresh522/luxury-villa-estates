@@ -111,8 +111,8 @@ const Navbar = () => {
           <img
             src={rioLogo}
             alt="RiO Pool Villas"
-            className="h-12 md:h-14 w-auto object-contain brightness-0 invert"
-            style={{ filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
+            className="h-12 md:h-14 w-auto object-contain"
+            style={{ filter: scrolled ? 'brightness(0)' : 'brightness(0) invert(1)' }}
           />
         </Link>
 
