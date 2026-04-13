@@ -30,8 +30,48 @@ const Index = () => {
       <Helmet>
         <title>RiO Pool Villas — Luxury Beachfront Private Pool Villas in Chirala, AP</title>
         <meta name="description" content="Experience luxury beachfront private pool villas at RiO Pool Villas, Chirala. Premium resort with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
-        <meta name="keywords" content="luxury pool villas Chirala, beachfront resort Andhra Pradesh, private pool villas India, RiO Pool Villas, beach resort near Hyderabad, infinity pool resort, honeymoon resort Chirala, family resort beach India, Ramapuram Beach resort, luxury holiday destination India, best resort in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury resort, romantic getaway India, pool villa near Vijayawada, boutique resort AP, beach holiday India, oceanview villa, exclusive beach resort" />
+        <meta name="keywords" content="luxury pool villas Chirala, beachfront resort Andhra Pradesh, private pool villas India, RiO Pool Villas, beach resort near Hyderabad, infinity pool resort, honeymoon resort Chirala, family resort beach India, Ramapuram Beach resort, luxury holiday destination India, best resort in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury resort, romantic getaway India, pool villa near Vijayawada, boutique resort AP, beach holiday India, oceanview villa, exclusive beach resort, luxury accommodation Chirala, villa with private pool, beachfront villa booking, spa resort Andhra Pradesh, fine dining resort India, water sports Chirala, couple getaway AP, premium resort booking, coastal luxury resort India, beach wedding venue Chirala" />
         <link rel="canonical" href="https://riopoolvillas.com/" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where is RiO Pool Villas located?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "RiO Pool Villas is located on Ramapuram Beach Road, Vetapalem, Chirala, Andhra Pradesh 523187, India. It is approximately 5 hours from Hyderabad and 3 hours from Vijayawada."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the price range for villas at RiO Pool Villas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our luxury pool villas range from ₹18,000 to ₹35,000 per night, depending on the villa size and amenities. All villas include private pools, beach access, and complimentary breakfast."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does RiO Pool Villas offer wedding and event services?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, RiO Pool Villas offers complete wedding and event planning services including beachfront ceremonies, reception arrangements, catering, décor, and accommodation packages for guests."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What amenities are included in the villas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Every villa includes a private swimming pool, air conditioning, Wi-Fi, smart TV, king-size beds, fully equipped kitchen, 24/7 concierge, beach access, and complimentary spa and fitness center access."
+                }
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
       <Navbar />
 
