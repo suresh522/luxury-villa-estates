@@ -55,7 +55,7 @@ const DropdownMenu = ({ item, scrolled, pathname }: { item: NavItem; scrolled: b
         onClick={() => setOpen(!open)}
         className={`flex items-center gap-1 text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
           isActive
-            ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-accent"
+            ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-primary"
             : scrolled ? "text-foreground/80" : "text-primary-foreground/80"
         }`}
       >
@@ -129,7 +129,7 @@ const Navbar = () => {
                   location.pathname === link.to
                     ? scrolled
                       ? "text-primary"
-                      : "text-primary-foreground border-b-2 border-accent"
+                      : "text-primary-foreground border-b-2 border-primary"
                     : scrolled
                     ? "text-foreground/80"
                     : "text-primary-foreground/80"
@@ -147,7 +147,7 @@ const Navbar = () => {
             to="/contact"
             className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${
               location.pathname === "/contact"
-                ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-accent"
+                ? scrolled ? "text-primary" : "text-primary-foreground border-b-2 border-primary"
                 : scrolled ? "text-foreground/80" : "text-primary-foreground/80"
             }`}
           >
