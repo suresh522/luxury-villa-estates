@@ -20,6 +20,11 @@ import Adventures from "./pages/Adventures.tsx";
 import Honeymoon from "./pages/Honeymoon.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { HelmetProvider } from "react-helmet-async";
+import WhatsAppButton from "./components/WhatsAppButton.tsx"
+import BackToTop from "./components/BackToTop.tsx";
+import ScrollToTopWithHash from "./components/ScrollToTopWithHash.tsx";
+
+
 
 const queryClient = new QueryClient();
 
@@ -30,6 +35,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+         <ScrollToTopWithHash headerOffset={80} />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/villas" element={<Villas />} />
@@ -48,6 +54,8 @@ const App = () => (
             <Route path="/honeymoon" element={<Honeymoon />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <WhatsAppButton />
+          <BackToTop />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

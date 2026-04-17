@@ -37,7 +37,7 @@ const VillaSliderSection = () => {
   return (
     <section className="section-padding bg-card overflow-hidden">
       <div className="container-luxury">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 ">
           <SectionHeading
             subtitle="Explore Our Collection"
             title="Handpicked Luxury Villas"

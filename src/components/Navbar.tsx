@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import rioLogo from "@/assets/rio-logo.png";
+// import rioLogo from "@/assets/rio-logo.png";
+import riologo2 from "@/assets/rio-logo.png";
+
 
 interface NavItem {
   to?: string;
@@ -19,10 +21,10 @@ const navLinks: NavItem[] = [
       { to: "/experiences", label: "All Experiences" },
       { to: "/adventures", label: "Adventure & Water Sports" },
       { to: "/kids-activities", label: "Kids Activities" },
+      { to: "/spa", label: "Spa" },
+      { to: "/dining", label: "Dining" },
     ],
   },
-  { to: "/dining", label: "Dining" },
-  { to: "/spa", label: "Spa" },
   { to: "/gallery", label: "Gallery" },
   { to: "/amenities", label: "Amenities" },
   {
@@ -105,14 +107,14 @@ const Navbar = () => {
           : "bg-transparent py-4"
       }`}
     >
-      <div className="container-luxury flex items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container-luxury flex items-center justify-between px-4 sm:px-6 ">
         {/* Logo */}
         <Link to="/" className="flex items-center mr-12">
           <img
-            src={rioLogo}
+            src={riologo2}
             alt="RiO Pool Villas"
             className="h-12 md:h-14 w-auto object-contain"
-            style={{ filter: scrolled ? 'brightness(0)' : 'brightness(0) invert(1)' }}
+            // style={{ filter: scrolled ? 'brightness(0)' : 'brightness(0) invert(1)' }}
           />
         </Link>
 
@@ -142,7 +144,7 @@ const Navbar = () => {
         </div>
 
         {/* CTA + phone */}
-        <div className="hidden lg:flex items-center gap-5 ml-8">
+        <div className="hidden lg:flex items-center gap-10">
           <Link
             to="/contact"
             className={`text-sm font-semibold tracking-wide uppercase transition-colors hover:text-primary ${

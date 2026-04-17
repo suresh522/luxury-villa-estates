@@ -119,7 +119,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full px-10 py-6 text-base font-body border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="rounded-full px-10 py-6 text-base font-body border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
             >
               Book Your Stay
             </Button>
