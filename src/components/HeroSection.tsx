@@ -59,7 +59,7 @@ const HeroSection = () => {
   }, [next]);
 
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen min-h-[400px] lg:min-h-[700px]  md:min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
@@ -107,11 +107,11 @@ const HeroSection = () => {
           {slides[current].description}
         </p>
         <div
-          className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up"
+          className="flex flex-row sm:flex-row gap-4 justify-center animate-fade-in-up"
           style={{ animationDelay: "0.3s" }}
         >
           <Link to="/villas">
-            <Button size="lg" className="rounded-full px-10 py-6 text-base font-body">
+            <Button size="lg" className="rounded-full px-5 py-5 md:px-10 md:py-6 lg:px-10 lg:py-6 text-base font-body">
               Explore Villas
             </Button>
           </Link>
@@ -119,7 +119,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full px-10 py-6 text-base font-body border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
+              className="rounded-full px-5 py-6 md:px-10 md:py-6 lg:px-10 lg:py-6 text-base font-body border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
             >
               Book Your Stay
             </Button>
@@ -144,7 +144,7 @@ const HeroSection = () => {
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+      {/* <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-20 flex gap-4 ">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -157,7 +157,7 @@ const HeroSection = () => {
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">

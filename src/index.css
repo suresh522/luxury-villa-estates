@@ -201,3 +201,38 @@
     margin-right: auto;
     max-width: 90rem;
 }
+
+
+
+.gold-divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(0deg 0% 46.14%), hsl(var(--primary)));
+}
+
+.bg-accent {
+    background-color: hsl(0deg 0% 99.57%);
+}
+
+.text-accent {
+    color: hsl(0deg 0% 19.37%);
+}
+
+.bg-accent\/10 {
+    background-color: hsl(0deg 0% 0% / 10%);
+}
+
+
+.ring-accent {
+    --tw-ring-color: hsl(180.55deg 2.02% 4.79%);
+}
+
+.fill-accent {
+    fill: hsl(175.02deg 70% 55%);
+}
+
+
+
+.h-screen {
+    height: 80vh;
+}

@@ -18,7 +18,7 @@ const AmenitiesSection = () => {
       <div className="container-luxury">
         <SectionHeading
           subtitle="Amenities"
-          title="World-Class Experiences"
+          title="World Class Experiences"
           description="Every detail crafted to deliver an unforgettable luxury experience at RiO Pool Villas."
         />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

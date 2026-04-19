@@ -181,7 +181,7 @@ const Index = () => {
               </Button>
             </Link>
             <a href="tel:+919988886888">
-              <Button size="lg" variant="outline" className="rounded-full px-10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" variant="outline" className="rounded-full bg-transparent px-10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 Call +91 99 8888 6888
               </Button>
             </a>

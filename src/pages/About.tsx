@@ -248,7 +248,7 @@ const About = () => {
               <div className="relative mb-6">
                 <Quote className="w-8 h-8 text-primary/30 absolute -top-2 -left-2" />
                 <p className="text-muted-foreground leading-relaxed italic pl-8">
-                  "I envisioned RiO Pool Villas as more than just a resort — it's a place where families create unforgettable memories, couples rekindle their romance, and every guest feels the warmth of true Indian hospitality."
+                  "I envisioned RiO Pool Villas as more than just a resort it's a place where families create unforgettable memories, couples rekindle their romance, and every guest feels the warmth of true Indian hospitality."
                 </p>
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">

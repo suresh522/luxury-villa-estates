@@ -82,7 +82,7 @@ const Contact = () => {
                 {
                   icon: Clock,
                   title: "Office Hours",
-                  content: "24/7 — We never sleep, so you can rest easy",
+                  content: "24/7 We never sleep, so you can rest easy",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 mb-6">

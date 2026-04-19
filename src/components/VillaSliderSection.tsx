@@ -37,13 +37,13 @@ const VillaSliderSection = () => {
   return (
     <section className="section-padding bg-card overflow-hidden">
       <div className="container-luxury">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 ">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 mx-auto max-w-3xl ">
           <SectionHeading
             subtitle="Explore Our Collection"
             title="Handpicked Luxury Villas"
             description="Each villa is a masterpiece of design and comfort, offering private pools and ocean views."
           />
-          <div className="flex gap-3 mt-6 md:mt-0">
+          {/* <div className="flex gap-3 mt-6 md:mt-0">
             <button
               onClick={prev}
               className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
@@ -58,7 +58,7 @@ const VillaSliderSection = () => {
             >
               <ChevronRight className="w-5 h-5" />
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Slider track */}

@@ -26,7 +26,7 @@ const Adventures = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] lg:h-[70vh] flex items-center justify-center overflow-hidden">
         <img src={adventureImg} alt="Adventure Sports at RiO" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy))] via-[hsl(var(--navy))/0.3] to-transparent" />
         <div className="relative z-10 text-center text-primary-foreground px-4">

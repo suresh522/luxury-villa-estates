@@ -139,7 +139,7 @@ const Amenities = () => {
                 </div>
                 {/* floating badge */}
                 <div className="absolute -bottom-4 left-6 bg-primary text-primary-foreground px-5 py-2 rounded-full text-xs font-semibold shadow-lg">
-                  0{idx + 1} — Premium
+                  0{idx + 1}  Premium
                 </div>
               </div>
 
@@ -168,7 +168,7 @@ const Amenities = () => {
           <SectionHeading
             subtitle="Your Comfort, Our Priority"
             title="Every Detail, Perfected"
-            description="At RiO Pool Villas, luxury isn't just a word — it's woven into every amenity, every interaction, every moment of your stay."
+            description="At RiO Pool Villas, luxury isn't just a word it's woven into every amenity, every interaction, every moment of your stay."
             light
           />
           <Link to="/contact">
@@ -234,7 +234,7 @@ const Amenities = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="rounded-full px-10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button size="lg" variant="outline" className="rounded-full bg-transparent px-10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 Contact Us
               </Button>
             </Link>
