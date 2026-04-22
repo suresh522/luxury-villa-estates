@@ -20,7 +20,7 @@ const Adventures = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Adventure & Water Sports | RiO Pool Villas Chirala - Beach Activities</title>
+        <title>Adventure & Water Sports | RiO Pool Villas Chirala Beach Activities</title>
         <meta name="description" content="Exciting water sports and adventure activities at RiO Pool Villas Chirala. Jet skiing, parasailing, kayaking, deep sea fishing, and more." />
       </Helmet>
       <Navbar />

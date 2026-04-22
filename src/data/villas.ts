@@ -29,8 +29,8 @@ export const allVillas: Villa[] = [
   {
     id: "ocean-breeze",
     title: "Ocean Breeze Villa",
-    description: "A stunning beachfront villa with private infinity pool and unobstructed ocean views.",
-    longDescription: "The Ocean Breeze Villa is our signature beachfront property, featuring a stunning private infinity pool that seemingly merges with the ocean horizon. With 3 bedrooms, each with en-suite bathrooms, this villa offers spacious living for families or groups. The open-plan living area flows seamlessly onto the pool deck, while the fully equipped kitchen and private dining area make in-villa entertaining effortless. Wake up to panoramic ocean views and fall asleep to the gentle sound of waves.",
+    description: "A stunning beachaccess villa with private infinity pool and unobstructed ocean views.",
+    longDescription: "The Ocean Breeze Villa is our signature beachaccess property, featuring a stunning private infinity pool that seemingly merges with the ocean horizon. With 3 bedrooms, each with en-suite bathrooms, this villa offers spacious living for families or groups. The open plan living area flows seamlessly onto the pool deck, while the fully equipped kitchen and private dining area make in villa entertaining effortless. Wake up to panoramic ocean views and fall asleep to the gentle sound of waves.",
     image: villa1,
     gallery: [villa1, villaBedroom, villaLiving, villaBathroom],
     price: 25000,
@@ -72,9 +72,9 @@ export const allVillas: Villa[] = [
     features: ["Rooftop Jacuzzi", "Private Garden", "Outdoor Dining", "Chef Kitchen", "360° Views", "Smart Home", "WiFi", "Air Conditioning"],
   },
   {
-    id: "spa-retreat",
+    id: "spa retreat",
     title: "Spa Retreat Villa",
-    description: "Wellness-focused villa with private spa area, meditation garden, and beach access.",
+    description: "Wellness focused villa with private spa area, meditation garden, and beach access.",
     longDescription: "The Spa Retreat Villa is a haven of wellness and tranquility. Featuring a dedicated private spa area with treatment room, a zen meditation garden, and direct beach access, this villa is designed for those seeking rejuvenation. The interiors use natural materials and calming tones, while the outdoor rain shower and yoga deck add to the holistic experience.",
     image: villa4,
     gallery: [villa4, villaBathroom, villaLiving, villaBedroom],

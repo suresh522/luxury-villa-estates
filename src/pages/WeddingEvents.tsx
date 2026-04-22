@@ -14,7 +14,7 @@ const packages = [
     title: "Intimate Beach Wedding",
     guests: "Up to 50 Guests",
     price: "₹3,50,000",
-    features: ["Beachfront ceremony setup", "Floral arch & aisle décor", "Sound system & lighting", "Wedding coordinator", "2-night villa stay"],
+    features: ["Beachaccess ceremony setup", "Floral arch & aisle décor", "Sound system & lighting", "Wedding coordinator", "2-night villa stay"],
     highlight: false,
   },
   {
@@ -28,13 +28,13 @@ const packages = [
     title: "Royal Affair",
     guests: "Up to 300 Guests",
     price: "₹15,00,000",
-    features: ["Full resort buyout", "Celebrity chef menu", "Fireworks display", "Helicopter entry option", "5-night luxury suite", "Honeymoon package included"],
+    features: ["Full pool villas buyout", "Celebrity chef menu", "Fireworks display", "Helicopter entry option", "5-night luxury suite", "Honeymoon package included"],
     highlight: false,
   },
 ];
 
 const services = [
-  { icon: Flower2, title: "Floral Design", desc: "Custom floral arrangements by award-winning designers" },
+  { icon: Flower2, title: "Floral Design", desc: "Custom floral arrangements by award winning designers" },
   { icon: Camera, title: "Photography", desc: "Professional photo & video with drone coverage" },
   { icon: Music, title: "Entertainment", desc: "Live bands, DJs, and cultural performances" },
   { icon: Utensils, title: "Catering", desc: "Multi-cuisine menus crafted by our executive chef" },
@@ -46,8 +46,8 @@ const WeddingEvents = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Wedding & Events | RiO Pool Villas Chirala - Beach Wedding Venue</title>
-        <meta name="description" content="Plan your dream beach wedding at RiO Pool Villas Chirala. Luxury beachfront wedding venue with complete event planning, catering, and accommodation packages." />
+        <title>Wedding & Events | RiO Pool Villas Chirala Beach Wedding Venue</title>
+        <meta name="description" content="Plan your dream beach wedding at RiO Pool Villas Chirala. Luxury beachaccess  wedding venue with complete event planning, catering, and accommodation packages." />
       </Helmet>
       <Navbar />
 
@@ -59,7 +59,7 @@ const WeddingEvents = () => {
           <Heart className="w-10 h-10 mx-auto mb-4 text-accent" />
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Weddings & Events</h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-            Create unforgettable celebrations at the most stunning beachfront venue in Andhra Pradesh
+            Create unforgettable celebrations at the most stunning beachaccess venue in Andhra Pradesh
           </p>
         </div>
       </section>

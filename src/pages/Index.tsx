@@ -29,8 +29,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>RiO Pool Villas — Luxury Beachfront Private Pool Villas in Chirala, AP</title>
-        <meta name="description" content="Experience luxury beachfront private pool villas at RiO Pool Villas, Chirala. Premium resort with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
-        <meta name="keywords" content="luxury pool villas Chirala, beachfront resort Andhra Pradesh, private pool villas India, RiO Pool Villas, beach resort near Hyderabad, infinity pool resort, honeymoon resort Chirala, family resort beach India, Ramapuram Beach resort, luxury holiday destination India, best resort in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury resort, romantic getaway India, pool villa near Vijayawada, boutique resort AP, beach holiday India, oceanview villa, exclusive beach resort, luxury accommodation Chirala, villa with private pool, beachfront villa booking, spa resort Andhra Pradesh, fine dining resort India, water sports Chirala, couple getaway AP, premium resort booking, coastal luxury resort India, beach wedding venue Chirala" />
+        <meta name="description" content="Experience luxury beachaccess private pool villas at RiO Pool Villas, Chirala. Premium resort with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
+        <meta name="keywords" content="luxury pool villas Chirala, beachaccess pool villas Andhra Pradesh, private pool villas India, RiO Pool Villas, beach pool villas near Hyderabad, infinity pool villas, honeymoon pool villas Chirala, family pool villas beach India, Ramapuram Beach pool villas, luxury holiday destination India, best pool villas in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury pool villas, romantic getaway India, pool villas near Vijayawada, boutique pool villas AP, beach holiday India, oceanview villa, exclusive beachaccess pool villas, luxury accommodation Chirala, villa with private pool, beachaccess pool villas booking, spa pool villas Andhra Pradesh, fine dining resort India, water sports Chirala, couple getaway AP, premium pool villas booking, coastal luxury pool villas India, beach wedding venue Chirala" />
         <link rel="canonical" href="https://riopoolvillas.com/" />
         <script type="application/ld+json">{`
           {
@@ -87,7 +87,7 @@ const Index = () => {
           <SectionHeading
             subtitle="Our Collection"
             title="Luxury Pool Villas"
-            description="Hand-crafted villas designed for the discerning traveler. Each villa offers private pools, beachfront access, and world-class amenities."
+            description="Hand crafted pool villas designed for the discerning traveler. Each villa offers private pools, beach access, and world-class amenities."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredVillas.map((villa) => (

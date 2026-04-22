@@ -40,18 +40,21 @@ const AboutPreviewSection = () => {
               Welcome to <span className="text-gradient">RiO Pool Villas</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
+              “Step into sophistication with a stunning galaxy-view ceiling soaring to 16 ft, paired with top-notch furniture and world-class amenities for a truly luxurious living experience.”
+            </p>
+            {/* <p className="text-muted-foreground leading-relaxed mb-4">
               Born from a passion for hospitality and the breathtaking beauty of Chirala's coastline,
               RiO Pool Villas is a sanctuary where travelers immerse themselves in the lap of luxury
               while staying connected to nature.
-            </p>
+            </p> */}
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Each villa has been meticulously designed by award-winning architects, blending modern
+              Each pool villa has been meticulously designed by award winning architects, blending modern
               minimalism with traditional Indian coastal aesthetics.
             </p>
 
             <div className="grid grid-cols-3 gap-4 mb-8">
               {[
-                { icon: Award, value: "Award", label: "Winning Resort" },
+                { icon: Award, value: "Award", label: "Winning pool villas" },
                 { icon: Users, value: "1000+", label: "Happy Guests" },
                 { icon: Star, value: "4.9★", label: "Guest Rating" },
               ].map((item) => (

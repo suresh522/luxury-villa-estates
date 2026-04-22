@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <img src={rioLogo} alt="RiO Pool Villas" className="h-16 w-auto object-contain mb-4 brightness-0 invert" />
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
-              Experience the ultimate luxury beachfront living at Chirala's finest pool villas resort.
+              Experience the ultimate luxury beachaccess living at Chirala's finest pool villas.
             </p>
             <div className="flex gap-4">
               {[
@@ -78,9 +78,9 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 Ramapuram Beach Rd, Vetapalem, Chirala, Andhra Pradesh, India-523187
               </a>
-              <a href="tel:+919988886888" className="flex items-center gap-3 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
+              <a href="tel:+919533442666" className="flex items-center gap-3 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                +91 99 8888 6888
+                +91 95 3344 2666
               </a>
               <a href="mailto:riopoolvillas@gmail.com" className="flex items-center gap-3 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
                 <Mail className="w-4 h-4 flex-shrink-0" />

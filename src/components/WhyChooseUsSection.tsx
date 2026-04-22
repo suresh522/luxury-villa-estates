@@ -4,7 +4,7 @@ const features = [
   {
     icon: Shield,
     title: "Private & Exclusive",
-    description: "Gated beachfront property with 24/7 security ensuring your complete privacy and peace of mind.",
+    description: "Gated beachaccess property with 24/7 security ensuring your complete privacy and peace of mind.",
   },
   {
     icon: Star,

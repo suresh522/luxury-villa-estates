@@ -34,8 +34,8 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>About RiO Pool Villas — Our Story | Luxury Beach Resort Chirala</title>
-        <meta name="description" content="Discover the story behind RiO Pool Villas — a luxury beachfront resort in Chirala, Andhra Pradesh. Our vision, values, and commitment to world-class hospitality on Ramapuram Beach." />
+        <title>About RiO Pool Villas Our Story | Luxury Beach Resort Chirala</title>
+        <meta name="description" content="Discover the story behind RiO Pool Villas a luxury beachfront resort in Chirala, Andhra Pradesh. Our vision, values, and commitment to world class hospitality on Ramapuram Beach." />
         <meta name="keywords" content="about RiO Pool Villas, luxury resort Chirala story, beachfront resort Andhra Pradesh, Ramapuram Beach resort, premium hospitality India, boutique beach resort" />
         <link rel="canonical" href="https://riopoolvillas.com/about" />
       </Helmet>
@@ -56,8 +56,8 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>Born from a passion for hospitality and the breathtaking beauty of Chirala's coastline, RiO Pool Villas was conceived as a sanctuary where travelers can immerse themselves in the lap of luxury while staying connected to nature.</p>
-                <p>Each villa has been meticulously designed by award-winning architects, blending modern minimalism with traditional Indian coastal aesthetics. Our private pools, lush gardens, and direct beach access create an atmosphere of unparalleled tranquility.</p>
-                <p>Located along Ramapuram Beach Road, our resort offers the perfect escape from city life while remaining easily accessible from major cities in Andhra Pradesh and Telangana.</p>
+                <p>Each villa has been meticulously designed by award winning architects, blending modern minimalism with traditional Indian coastal aesthetics. Our private pools, lush gardens, and direct beach access create an atmosphere of unparalleled tranquility.</p>
+                <p>Located along Ramapuram Beach Road, our pool villas offers the perfect escape from city life while remaining easily accessible from major cities in Andhra Pradesh and Telangana.</p>
               </div>
               <div className="flex gap-8 mt-8 pt-8 border-t border-border">
                 {[
@@ -178,7 +178,7 @@ const About = () => {
       {/* Experiences Timeline */}
       <section className="section-padding bg-secondary">
         <div className="container-luxury">
-          <SectionHeading subtitle="A Day at RiO" title="Your Perfect Day" description="Experience a typical day of luxury and relaxation at our resort." />
+          <SectionHeading subtitle="A Day at RiO" title="Your Perfect Day" description="Experience a typical day of luxury and relaxation at our pool villas ." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { time: "6:00 AM", title: "Sunrise Yoga", desc: "Begin your day with beachfront yoga and meditation.", image: spaWellness },
@@ -206,7 +206,7 @@ const About = () => {
       {/* Team / Values */}
       <section className="section-padding">
         <div className="container-luxury">
-          <SectionHeading subtitle="Our Promise" title="What Makes Us Special" description="We don't just offer accommodation — we create memories that last a lifetime." />
+          <SectionHeading subtitle="Our Promise" title="What Makes Us Special" description="We don't just offer accommodation we create memories that last a lifetime." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: Sparkles, title: "Personalized Service", desc: "Every guest receives tailored attention from our dedicated concierge team, ensuring your stay is exactly how you envision it.", image: teamStaff },
@@ -248,12 +248,12 @@ const About = () => {
               <div className="relative mb-6">
                 <Quote className="w-8 h-8 text-primary/30 absolute -top-2 -left-2" />
                 <p className="text-muted-foreground leading-relaxed italic pl-8">
-                  "I envisioned RiO Pool Villas as more than just a resort it's a place where families create unforgettable memories, couples rekindle their romance, and every guest feels the warmth of true Indian hospitality."
+                  "I envisioned RiO Pool Villas as more than just a pool villas it's a place where families create unforgettable memories, couples rekindle their romance, and every guest feels the warmth of true Indian hospitality."
                 </p>
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>With over two decades of experience in the hospitality industry, our founder transformed a stretch of pristine Chirala coastline into one of Andhra Pradesh's most sought-after luxury destinations.</p>
-                <p>His vision combines world-class amenities with the authentic charm of coastal Andhra, ensuring every guest experiences the perfect blend of luxury and local culture.</p>
+                <p>With over two decades of experience in the hospitality industry, our founder transformed a stretch of pristine Chirala coastline into one of Andhra Pradesh's most sought after luxury destinations.</p>
+                <p>His vision combines world class amenities with the authentic charm of coastal Andhra, ensuring every guest experiences the perfect blend of luxury and local culture.</p>
               </div>
               <div className="flex gap-8 mt-8 pt-8 border-t border-border">
                 {[

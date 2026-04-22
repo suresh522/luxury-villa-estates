@@ -14,7 +14,7 @@ const slides = [
     subtitle: "Welcome to Paradise",
     title: "RiO Pool",
     highlight: "Villas",
-    description: "Discover unmatched luxury at Chirala's premier beachfront resort. Private pool villas where the ocean meets your doorstep.",
+    description: "Discover unmatched luxury at Chirala's premier beachaccess pool villas. Private pool villas where the ocean meets your doorstep.",
   },
   {
     image: heroSlide2,
@@ -26,8 +26,8 @@ const slides = [
   {
     image: heroSlide3,
     subtitle: "Aerial Paradise",
-    title: "Beachfront",
-    highlight: "Resort",
+    title: "BeachAccess",
+    highlight: "Villas",
     description: "Nestled along pristine Ramapuram Beach, our exclusive resort offers an unparalleled coastal retreat.",
   },
   {

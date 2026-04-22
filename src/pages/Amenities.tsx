@@ -23,13 +23,13 @@ const showcaseAmenities = [
   {
     image: amenityPool,
     title: "Private Infinity Pools",
-    desc: "Every villa at RiO features its own temperature-controlled infinity pool with mesmerizing ocean views. Swim under the stars or bask in the golden sunrise — your pool, your rules.",
+    desc: "Every villa at RiO features its own temperature-controlled infinity pool with mesmerizing ocean views. Swim under the stars or bask in the golden sunrise your pool, your rules.",
     features: ["Temperature controlled", "LED underwater lighting", "Poolside sun loungers", "Private pool deck"],
   },
   {
     image: amenityFitness,
     title: "Oceanview Fitness Center",
-    desc: "Stay active with our state-of-the-art fitness center featuring floor-to-ceiling windows overlooking the Bay of Bengal. Premium equipment meets breathtaking panoramas.",
+    desc: "Stay active with our state of the art fitness center featuring floor to ceiling windows overlooking the Bay of Bengal. Premium equipment meets breathtaking panoramas.",
     features: ["Technogym equipment", "Personal trainer on request", "Yoga mats & props", "Post-workout smoothie bar"],
   },
   {
@@ -41,7 +41,7 @@ const showcaseAmenities = [
   {
     image: amenityFamily,
     title: "Family & Kids Zone",
-    desc: "Fun-filled activities for the little ones while you unwind. Our supervised kids' club, splash pool, and adventure playground keep the whole family entertained.",
+    desc: "Fun filled activities for the little ones while you unwind. Our supervised kids' club, splash pool, and adventure playground keep the whole family entertained.",
     features: ["Kids splash pool", "Supervised play area", "Board games library", "Outdoor adventure trail"],
   },
   {
@@ -78,8 +78,8 @@ const Amenities = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Resort Amenities — RiO Pool Villas Chirala | World-Class Facilities</title>
-        <meta name="description" content="Discover world-class amenities at RiO Pool Villas — private pools, fitness center, kids zone, concierge, laundry, beach access, smart rooms, and 24/7 security in Chirala." />
+        <title>Resort Amenities RiO Pool Villas Chirala | World Class Facilities</title>
+        <meta name="description" content="Discover world class amenities at RiO Pool Villas private pools, fitness center, kids zone, concierge, laundry, beach access, smart rooms, and 24/7 security in Chirala." />
         <meta name="keywords" content="resort amenities Chirala, luxury villa facilities, private pool resort, fitness center resort, kids zone beach resort, smart room villa India" />
         <link rel="canonical" href="https://riopoolvillas.com/amenities" />
       </Helmet>
@@ -90,7 +90,7 @@ const Amenities = () => {
         <img src={amenityHero} alt="RiO Pool Villas aerial resort view" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <p className="font-body text-xs uppercase tracking-[0.3em] text-primary-foreground/70 mb-3">World-Class Amenities</p>
+          <p className="font-body text-xs uppercase tracking-[0.3em] text-primary-foreground/70 mb-3">World Class Amenities</p>
           <div className="gold-divider mx-auto mb-6" />
           <h1 className="font-display text-4xl md:text-6xl font-bold text-primary-foreground leading-tight mb-4">
             Luxury Beyond Compare
