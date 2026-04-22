@@ -95,7 +95,7 @@ const Spa = () => {
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
                     <t.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <span className="text-2xl font-extrabold text-primary">{t.price}</span>
+                  {/* <span className="text-2xl font-extrabold text-primary">{t.price}</span> */}
                 </div>
                 <h3 className="text-xl font-bold text-card-foreground mb-1">{t.title}</h3>
                 <p className="text-xs text-muted-foreground mb-3">{t.duration}</p>

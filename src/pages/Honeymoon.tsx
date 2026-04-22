@@ -79,7 +79,7 @@ const Honeymoon = () => {
               <div key={i} className={`rounded-2xl p-8 border ${i === 1 ? "bg-primary text-primary-foreground border-primary ring-4 ring-accent" : "bg-card border-border"}`}>
                 <h3 className="text-2xl font-bold mb-1">{pkg.title}</h3>
                 <p className={`text-sm mb-4 ${i === 1 ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{pkg.nights}</p>
-                <p className="text-3xl font-extrabold mb-6">{pkg.price}</p>
+                {/* <p className="text-3xl font-extrabold mb-6">{pkg.price}</p> */}
                 <ul className="space-y-3 mb-8">
                   {pkg.inclusions.map((inc, j) => (
                     <li key={j} className={`text-sm flex items-start gap-2 ${i === 1 ? "text-primary-foreground/80" : "text-muted-foreground"}`}>

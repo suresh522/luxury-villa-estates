@@ -47,7 +47,7 @@ const Adventures = () => {
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <a.icon className="w-7 h-7 text-primary" />
                     </div>
-                    <span className="text-xl font-extrabold text-primary">{a.price}</span>
+                    {/* <span className="text-xl font-extrabold text-primary">{a.price}</span> */}
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-1">{a.title}</h3>
                   <p className="text-xs text-accent font-semibold uppercase tracking-wider mb-3">Duration: {a.duration}</p>

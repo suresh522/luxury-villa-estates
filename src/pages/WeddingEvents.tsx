@@ -92,7 +92,7 @@ const WeddingEvents = () => {
                 {pkg.highlight && <div className="text-xs font-bold uppercase tracking-widest text-accent mb-4 flex items-center gap-1"><Star className="w-3 h-3" /> Most Popular</div>}
                 <h3 className="text-2xl font-bold mb-1">{pkg.title}</h3>
                 <p className={`text-sm mb-4 ${pkg.highlight ? "text-primary-foreground/70" : "text-muted-foreground"}`}>{pkg.guests}</p>
-                <p className="text-3xl font-extrabold mb-6">{pkg.price}</p>
+                {/* <p className="text-3xl font-extrabold mb-6">{pkg.price}</p> */}
                 <ul className="space-y-3 mb-8">
                   {pkg.features.map((f, j) => (
                     <li key={j} className={`text-sm flex items-start gap-2 ${pkg.highlight ? "text-primary-foreground/80" : "text-muted-foreground"}`}>

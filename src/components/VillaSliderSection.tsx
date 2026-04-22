@@ -88,8 +88,9 @@ const VillaSliderSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                   {/* Price badge */}
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold">
-                    {villa.priceLabel}
+                  <div className="absolute top-4 right-4  text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold">
+                    {/* bg-primary */}
+                    {/* {villa.priceLabel} */}
                   </div>
 
                   {/* Content */}

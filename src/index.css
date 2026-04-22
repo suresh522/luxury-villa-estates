@@ -236,3 +236,8 @@
 .h-screen {
     height: 80vh;
 }
+
+
+.bg-primary {
+    background-color: hsl(var(--primary));
+}

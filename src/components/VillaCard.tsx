@@ -25,7 +25,8 @@ const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, 
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-body font-semibold">
+          <div className="absolute top-4 right-4  text-primary-foreground px-4 py-1.5 rounded-full text-sm font-body font-semibold">  {/* bg-primary */} 
+           
             {price}
           </div>
         </div>

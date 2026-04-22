@@ -157,13 +157,13 @@ const Navbar = () => {
           </Link>
           <span className={`mx-2 text-sm ${scrolled ? "text-border" : "text-primary-foreground/30"}`}>|</span>
           <a
-            href="tel:+919533442666"
+            href="tel:+919988886888"
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               scrolled ? "text-foreground" : "text-primary-foreground"
             }`}
           >
             <Phone className="w-4 h-4" />
-            +91 95 3344 2666
+            +91 99 8888 6888
           </a>
           <Link to="/contact" className="ml-5">
             <Button variant="default" size="sm" className="rounded-full px-6">
