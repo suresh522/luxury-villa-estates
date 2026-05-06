@@ -59,7 +59,7 @@ export const allVillas: Villa[] = [
   {
     id: "royal-terrace",
     title: "Royal Terrace Villa",
-    description: "Two-story villa with rooftop jacuzzi, private garden, and outdoor dining area.",
+    description: "Two story villa with rooftop jacuzzi, private garden, and outdoor dining area.",
     longDescription: "The Royal Terrace Villa is our most expansive property, spread across two levels with a rooftop terrace featuring a private jacuzzi and 360-degree views. The ground floor opens onto a lush private garden with an outdoor dining area perfect for alfresco meals prepared by our chef. Four bedrooms with premium bedding, a spacious living room, and a modern kitchen make this the ultimate group retreat.",
     image: villa3,
     gallery: [villa3, villaLiving, villaBedroom, villaBathroom],
@@ -90,7 +90,7 @@ export const allVillas: Villa[] = [
     id: "tropical-paradise",
     title: "Tropical Paradise Villa",
     description: "Open-concept living surrounded by lush tropical gardens with premium furnishings.",
-    longDescription: "The Tropical Paradise Villa embraces indoor-outdoor living with its open-concept design surrounded by lush tropical gardens. Premium rattan furnishings, natural stone floors, and living plant walls create a connection with nature while maintaining five-star comfort. The oversized pool is perfect for families, and the covered outdoor lounge is ideal for lazy afternoons.",
+    longDescription: "The Tropical Paradise Villa embraces indoor outdoor living with its open-concept design surrounded by lush tropical gardens. Premium rattan furnishings, natural stone floors, and living plant walls create a connection with nature while maintaining five-star comfort. The oversized pool is perfect for families, and the covered outdoor lounge is ideal for lazy afternoons.",
     image: villa5,
     gallery: [villa5, villaLiving, poolBar, villaBedroom],
     // price: 28000,

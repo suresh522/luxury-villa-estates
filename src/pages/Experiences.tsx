@@ -57,7 +57,7 @@ const Experiences = () => {
       <Helmet>
         <title>Experiences & Activities — RiO Pool Villas Chirala | Curated Luxury</title>
         <meta name="description" content="Explore curated luxury experiences at RiO Pool Villas — sunset cruises, cultural tours, photography, live music, beach bonfires, and more in Chirala, Andhra Pradesh." />
-        <meta name="keywords" content="luxury experiences Chirala, resort activities Andhra Pradesh, sunset cruise, cultural tours, beach bonfire, curated experiences resort India" />
+        <meta name="keywords" content="luxury experiences Chirala, pool villas activities Andhra Pradesh, sunset cruise, cultural tours, beach bonfire, curated experiences pool villas India" />
         <link rel="canonical" href="https://riopoolvillas.com/experiences" />
       </Helmet>
       <Navbar />

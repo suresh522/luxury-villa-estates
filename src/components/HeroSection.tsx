@@ -28,7 +28,7 @@ const slides = [
     subtitle: "Aerial Paradise",
     title: "BeachAccess",
     highlight: "Villas",
-    description: "Nestled along pristine Ramapuram Beach, our exclusive resort offers an unparalleled coastal retreat.",
+    description: "Nestled along pristine Ramapuram Beach, our exclusive pool villas offer an unparalleled coastal retreat.",
   },
   {
     image: heroSlide4,

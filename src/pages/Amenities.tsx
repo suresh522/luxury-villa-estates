@@ -78,9 +78,9 @@ const Amenities = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Resort Amenities RiO Pool Villas Chirala | World Class Facilities</title>
+        <title>Pool villa Amenities RiO Pool Villas Chirala | World Class Facilities</title>
         <meta name="description" content="Discover world class amenities at RiO Pool Villas private pools, fitness center, kids zone, concierge, laundry, beach access, smart rooms, and 24/7 security in Chirala." />
-        <meta name="keywords" content="resort amenities Chirala, luxury villa facilities, private pool resort, fitness center resort, kids zone beach resort, smart room villa India" />
+        <meta name="keywords" content="pool villas amenities Chirala, luxury villas facilities, private pool villas, fitness center villas, kids zone beach villas, smart room villas India" />
         <link rel="canonical" href="https://riopoolvillas.com/amenities" />
       </Helmet>
       <Navbar />
@@ -198,7 +198,7 @@ const Amenities = () => {
                 items: ["24/7 butler service", "In-villa chef on request", "Spa treatments in-room", "Airport luxury transfers", "Laundry & dry cleaning", "Babysitting service", "Custom excursion planning", "Private yoga sessions"],
               },
               {
-                heading: "Resort Facilities",
+                heading: "Pool Villas Facilities",
                 items: ["Oceanview fitness center", "Beachfront lounge & bar", "Kids' club & splash pool", "Curated library lounge", "Landscaped tropical gardens", "Outdoor event pavilion", "Bicycle rentals", "Water sports equipment"],
               },
             ].map((col) => (

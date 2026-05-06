@@ -42,8 +42,8 @@ const Dining = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Fine Dining & Restaurants — RiO Pool Villas Chirala | Farm-to-Table</title>
-        <meta name="description" content="Experience world-class farm-to-table dining at RiO Pool Villas. Beachfront restaurant, private dining, poolside bar, and curated culinary experiences in Chirala, AP." />
-        <meta name="keywords" content="fine dining Chirala, beachfront restaurant Andhra Pradesh, luxury resort dining, farm to table resort India, pool bar villa, private dining experience" />
+        <meta name="description" content="Experience world-class farm-to-table dining at RiO Pool Villas. Beachaccess restaurant, private dining, poolside bar, and curated culinary experiences in Chirala, AP." />
+        <meta name="keywords" content="fine dining Chirala, beachaccess restaurant Andhra Pradesh, luxury pool villas dining, farm to table pool villas India, pool bar villa, private dining experience" />
         <link rel="canonical" href="https://riopoolvillas.com/dining" />
       </Helmet>
       <Navbar />

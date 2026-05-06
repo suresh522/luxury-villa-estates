@@ -9,7 +9,7 @@ import adventureImg from "@/assets/adventure-sports.jpg";
 
 const adventures = [
   { icon: Sailboat, title: "Jet Skiing", price: "₹2,500/ride", duration: "30 min", desc: "Thrilling high-speed jet ski rides along the Chirala coastline with professional instructors." },
-  { icon: Wind, title: "Parasailing", price: "₹3,000/flight", duration: "15 min", desc: "Soar above the ocean and enjoy breathtaking aerial views of the coastline and resort." },
+  { icon: Wind, title: "Parasailing", price: "₹3,000/flight", duration: "15 min", desc: "Soar above the ocean and enjoy breathtaking aerial views of the coastline and pool villas." },
   { icon: Anchor, title: "Kayaking & Canoeing", price: "₹1,500/hour", duration: "1 hour", desc: "Paddle through calm backwaters and explore hidden coves along the beach." },
   { icon: Fish, title: "Deep Sea Fishing", price: "₹5,000/trip", duration: "3 hours", desc: "Join experienced fishermen for an authentic deep-sea fishing experience." },
   { icon: Mountain, title: "Beach Trekking", price: "Complimentary", duration: "2 hours", desc: "Guided coastal trekking through scenic trails, dunes, and local villages." },

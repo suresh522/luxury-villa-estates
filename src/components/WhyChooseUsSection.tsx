@@ -44,7 +44,7 @@ const WhyChooseUsSection = () => {
             The RiO Difference
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-base leading-relaxed text-muted-foreground">
-            What sets us apart from every other luxury resort on the coast.
+            What sets us apart from every other luxury pool villas on the coast.
           </p>
         </div>
 

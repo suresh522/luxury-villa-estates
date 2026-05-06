@@ -20,8 +20,8 @@ const KidsActivities = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Kids Activities | RiO Pool Villas Chirala - Family-Friendly Resort</title>
-        <meta name="description" content="Family-friendly luxury resort with supervised kids activities, splash pools, arts & crafts, nature trails, and entertainment at RiO Pool Villas Chirala." />
+        <title>Kids Activities | RiO Pool Villas Chirala - Family-Friendly Pool Villas</title>
+        <meta name="description" content="Family friendly luxury pool villas with supervised kids activities, splash pools, arts & crafts, nature trails, and entertainment at RiO Pool Villas Chirala." />
       </Helmet>
       <Navbar />
 

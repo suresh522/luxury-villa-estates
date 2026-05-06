@@ -29,7 +29,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>RiO Pool Villas | Luxury Beachaccess Private Pool Villas in Chirala, AP</title>
-        <meta name="description" content="Experience luxury beachaccess private pool villas at RiO Pool Villas, Chirala. Premium resort with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
+        <meta name="description" content="Experience luxury beachaccess private pool villas at RiO Pool Villas, Chirala. Premium pool villas with infinity pools, ocean views, spa, fine dining, water sports, weddings & honeymoon packages near Ramapuram Beach, Andhra Pradesh." />
         <meta name="keywords" content="luxury pool villas Chirala, beachaccess pool villas Andhra Pradesh, private pool villas India, RiO Pool Villas, beach pool villas near Hyderabad, infinity pool villas, honeymoon pool villas Chirala, family pool villas beach India, Ramapuram Beach pool villas, luxury holiday destination India, best pool villas in Chirala, premium villas AP, weekend getaway Hyderabad, coastal luxury pool villas, romantic getaway India, pool villas near Vijayawada, boutique pool villas AP, beach holiday India, oceanview villa, exclusive beachaccess pool villas, luxury accommodation Chirala, villa with private pool, beachaccess pool villas booking, spa pool villas Andhra Pradesh, fine dining resort India, water sports Chirala, couple getaway AP, premium pool villas booking, coastal luxury pool villas India, beach wedding venue Chirala" />
         <link rel="canonical" href="https://riopoolvillas.com/" />
         <script type="application/ld+json">{`

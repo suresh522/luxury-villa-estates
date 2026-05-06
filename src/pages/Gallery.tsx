@@ -31,7 +31,7 @@ const images = [
   { src: heroSlide1, category: "Pool", alt: "Infinity pool at sunset" },
   { src: villa1, category: "Villas", alt: "Ocean Breeze Villa" },
   { src: villaBedroom, category: "Interiors", alt: "Luxury master bedroom" },
-  { src: heroSlide3, category: "Villas", alt: "Aerial resort view" },
+  { src: heroSlide3, category: "Villas", alt: "Aerial pool villa view" },
   { src: poolBar, category: "Pool", alt: "Pool bar and lounge" },
   { src: diningExp, category: "Dining", alt: "Beachside candlelit dinner" },
   { src: villa2, category: "Villas", alt: "Sunset Haven Suite" },
@@ -58,9 +58,9 @@ const Gallery = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Photo Gallery — RiO Pool Villas Chirala | Luxury Resort Images</title>
-        <meta name="description" content="Browse stunning photos of RiO Pool Villas — luxury beachfront villas, private pools, ocean views, fine dining, and spa in Chirala, Andhra Pradesh." />
-        <meta name="keywords" content="RiO Pool Villas photos, luxury resort gallery, beachfront villa images, Chirala resort pictures, pool villa gallery India" />
+        <title>Photo Gallery — RiO Pool Villas Chirala | Luxury pool villas Images</title>
+        <meta name="description" content="Browse stunning photos of RiO Pool Villas — luxury beachaccess villas, private pools, ocean views, fine dining, and spa in Chirala, Andhra Pradesh." />
+        <meta name="keywords" content="RiO Pool Villas photos, luxury pool villas gallery, beachaccess villa images, Chirala pool villas pictures, pool villa gallery India" />
         <link rel="canonical" href="https://riopoolvillas.com/gallery" />
       </Helmet>
       <Navbar />

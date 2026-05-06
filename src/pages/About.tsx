@@ -34,9 +34,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>About RiO Pool Villas Our Story | Luxury Beach Resort Chirala</title>
-        <meta name="description" content="Discover the story behind RiO Pool Villas a luxury beachfront resort in Chirala, Andhra Pradesh. Our vision, values, and commitment to world class hospitality on Ramapuram Beach." />
-        <meta name="keywords" content="about RiO Pool Villas, luxury resort Chirala story, beachfront resort Andhra Pradesh, Ramapuram Beach resort, premium hospitality India, boutique beach resort" />
+        <title>About RiO Pool Villas Our Story | Luxury Beachaccess Chirala</title>
+        <meta name="description" content="Discover the story behind RiO Pool Villas a luxury beachaccess pool villas in Chirala, Andhra Pradesh. Our vision, values, and commitment to world class hospitality on Ramapuram Beach." />
+        <meta name="keywords" content="about RiO Pool Villas, luxury pool villas Chirala story, beachaccess pool villas Andhra Pradesh, Ramapuram Beach pool villas, premium hospitality India, boutique beachaccess pool villas" />
         <link rel="canonical" href="https://riopoolvillas.com/about" />
       </Helmet>
       <Navbar />
