@@ -1,12 +1,26 @@
-import villa1 from "@/assets/villa-1.jpg";
-import villa2 from "@/assets/villa-2.jpg";
-import villa3 from "@/assets/villa-3.jpg";
-import villa4 from "@/assets/villa-4.jpg";
-import villa5 from "@/assets/villa-5.jpg";
-import villa6 from "@/assets/villa-6.jpg";
-import villaBedroom from "@/assets/villa-bedroom.jpg";
-import villaBathroom from "@/assets/villa-bathroom.jpg";
-import villaLiving from "@/assets/villa-living.jpg";
+// import villa1 from "@/assets/villa-1.jpeg";
+// import villa2 from "@/assets/villa-2.jpeg";
+// import villa3 from "@/assets/villa-3.jpeg";
+// import villa4 from "@/assets/villa-4.jpeg";
+// import villa5 from "@/assets/villa-5.jpeg";
+// import villa6 from "@/assets/villa-6.jpeg";
+// import villaBedroom from "@/assets/villa-bedroom.jpg";
+// import villaBathroom from "@/assets/villa-bathroom.jpg";
+// import villaLiving from "@/assets/villa-living.jpg";
+// import poolBar from "@/assets/pool-bar.jpg";
+
+
+
+
+import villa1 from "@/assets/villa-1.jpeg";
+import villa2 from "@/assets/villa-2.jpeg";
+import villa3 from "@/assets/villa-3.jpeg";
+import villa4 from "@/assets/villa-4.jpeg";
+import villa5 from "@/assets/villa-5.jpeg";
+import villa6 from "@/assets/villa-6.jpeg";
+import villaBedroom from "@/assets/hero-slider-3.jpeg";
+import villaBathroom from "@/assets/villa-bathroom.jpeg";
+import villaLiving from "@/assets/villa-4.jpeg";
 import poolBar from "@/assets/pool-bar.jpg";
 
 export interface Villa {
@@ -20,6 +34,7 @@ export interface Villa {
   // priceLabel: string;
   bedrooms: number;
   bathrooms: number;
+  pool:number;
   guests: number;
   area: string;
   features: string[];
@@ -35,10 +50,11 @@ export const allVillas: Villa[] = [
     gallery: [villa1, villaBedroom, villaLiving, villaBathroom],
     // price: 25000,
     // priceLabel: "₹25,000/night",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
-    area: "2500",
+    bedrooms: 1,
+    bathrooms: 1,
+    pool:1,
+    guests: 2,
+    area: "1500",
     features: ["Private Infinity Pool", "Ocean View", "Beach Access", "Outdoor Dining", "King Beds", "Smart TV", "WiFi", "Air Conditioning"],
   },
   {
@@ -50,39 +66,44 @@ export const allVillas: Villa[] = [
     gallery: [villa2, villaBedroom, villaBathroom, poolBar],
     // price: 18000,
     // priceLabel: "₹18,000/night",
-    bedrooms: 2,
-    bathrooms: 2,
-    guests: 4,
+    bedrooms: 1,
+    bathrooms: 1,
+    pool: 1,
+    guests: 2,
     area: "1800",
     features: ["Plunge Pool", "Sunset View", "Soaking Tub", "Private Terrace", "King Bed", "Mini Bar", "WiFi", "Air Conditioning"],
   },
   {
     id: "royal-terrace",
-    title: "Royal Terrace Villa",
+    // title: "Royal Terrace Villa",
+    title: "Mini kids villa",
     description: "Two story villa with rooftop jacuzzi, private garden, and outdoor dining area.",
     longDescription: "The Royal Terrace Villa is our most expansive property, spread across two levels with a rooftop terrace featuring a private jacuzzi and 360-degree views. The ground floor opens onto a lush private garden with an outdoor dining area perfect for alfresco meals prepared by our chef. Four bedrooms with premium bedding, a spacious living room, and a modern kitchen make this the ultimate group retreat.",
     image: villa3,
     gallery: [villa3, villaLiving, villaBedroom, villaBathroom],
     // price: 35000,
     // priceLabel: "₹35,000/night",
-    bedrooms: 4,
-    bathrooms: 4,
-    guests: 8,
+    bedrooms: 1,
+    bathrooms: 1,
+    pool: 1,
+    guests: 2,
     area: "3500",
     features: ["Rooftop Jacuzzi", "Private Garden", "Outdoor Dining", "Chef Kitchen", "360° Views", "Smart Home", "WiFi", "Air Conditioning"],
   },
   {
     id: "spa retreat",
-    title: "Spa Retreat Villa",
+    // title: "Spa Retreat Villa",
+    title: "Dining set villa",
     description: "Wellness focused villa with private spa area, meditation garden, and beach access.",
     longDescription: "The Spa Retreat Villa is a haven of wellness and tranquility. Featuring a dedicated private spa area with treatment room, a zen meditation garden, and direct beach access, this villa is designed for those seeking rejuvenation. The interiors use natural materials and calming tones, while the outdoor rain shower and yoga deck add to the holistic experience.",
     image: villa4,
     gallery: [villa4, villaBathroom, villaLiving, villaBedroom],
     // price: 22000,
     // priceLabel: "₹22,000/night",
-    bedrooms: 2,
-    bathrooms: 3,
-    guests: 4,
+    bedrooms: 1,
+    bathrooms: 1,
+    pool: 1,
+    guests: 2,
     area: "2200",
     features: ["Private Spa", "Meditation Garden", "Beach Access", "Rain Shower", "Yoga Deck", "Organic Amenities", "WiFi", "Air Conditioning"],
   },
@@ -95,9 +116,10 @@ export const allVillas: Villa[] = [
     gallery: [villa5, villaLiving, poolBar, villaBedroom],
     // price: 28000,
     // priceLabel: "₹28,000/night",
-    bedrooms: 3,
-    bathrooms: 3,
-    guests: 6,
+    bedrooms: 1,
+    bathrooms: 1,
+    pool: 1,
+    guests: 2,
     area: "2800",
     features: ["Oversized Pool", "Tropical Garden", "Outdoor Lounge", "Natural Materials", "Family Friendly", "BBQ Area", "WiFi", "Air Conditioning"],
   },
@@ -110,9 +132,10 @@ export const allVillas: Villa[] = [
     gallery: [villa6, villaBedroom, villaBathroom, villaLiving],
     // price: 30000,
     // priceLabel: "₹30,000/night",
-    bedrooms: 3,
-    bathrooms: 4,
-    guests: 8,
+    bedrooms: 1,
+    bathrooms: 1,
+    pool: 1,
+    guests: 2,
     area: "3200",
     features: ["Infinity Pool", "Stargazing Deck", "Designer Interiors", "Ambient Lighting", "Ocean Views", "Premium Bar", "WiFi", "Air Conditioning"],
   },

@@ -5,7 +5,9 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Heart, Wine, Sparkles, Sunset, Bath, Camera } from "lucide-react";
-import honeymoonImg from "@/assets/honeymoon-package.jpg";
+// import honeymoonImg from "@/assets/honeymoon-package.jpg";
+
+import honeymoonImg from "@/assets/hero-slider-3.jpeg";
 
 const packages = [
   {
@@ -38,7 +40,7 @@ const Honeymoon = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] lg:h-[85vh] flex items-center justify-center overflow-hidden">
         <img src={honeymoonImg} alt="Honeymoon at RiO Pool Villas" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy))] via-[hsl(var(--navy))/0.5] to-transparent" />
         <div className="relative z-10 text-center text-primary-foreground px-4">

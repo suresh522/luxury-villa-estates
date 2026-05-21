@@ -5,10 +5,15 @@ import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import { Droplets, Flower2, Wind, Sun } from "lucide-react";
 
-import spaWellness from "@/assets/spa-wellness.jpg";
-import yogaWellness from "@/assets/yoga-wellness.jpg";
-import villaBathroom from "@/assets/villa-bathroom.jpg";
-import cabanaBeach from "@/assets/cabana-beach.jpg";
+// import spaWellness from "@/assets/spa-wellness.jpg";
+// import yogaWellness from "@/assets/yoga-wellness.jpg";
+// import villaBathroom from "@/assets/villa-bathroom.jpg";
+// import cabanaBeach from "@/assets/cabana-beach.jpg";
+
+import spaWellness from "@/assets/hero-slider-2.jpeg";
+import yogaWellness from "@/assets/hero-slider-2.jpeg";
+import villaBathroom from "@/assets/villa-bathroom.jpeg";
+import cabanaBeach from "@/assets/cabana-beach.jpeg";
 
 const treatments = [
   {
@@ -36,7 +41,7 @@ const treatments = [
     title: "Sunrise Yoga & Meditation",
     duration: "60 min",
     price: "₹2,000",
-    desc: "Begin your day with beachfront yoga guided by a certified instructor.",
+    desc: "Begin your day with beachaccess yoga guided by a certified instructor.",
     icon: Sun,
   },
 ];
@@ -52,7 +57,7 @@ const Spa = () => {
       </Helmet>
       <Navbar />
 
-      <ParallaxSection image={spaWellness} className="pt-40 pb-20">
+      <ParallaxSection image={spaWellness} className="pt-40 pb-20 h-[85vh]">
         <SectionHeading
           subtitle="Wellness & Rejuvenation"
           title="Spa & Wellness"
@@ -111,7 +116,7 @@ const Spa = () => {
         <div className="text-center max-w-3xl mx-auto">
           <SectionHeading
             subtitle="Mind & Body"
-            title="Beachfront Yoga & Meditation"
+            title="Beachaccess Yoga & Meditation"
             description="Join our daily sunrise yoga sessions on the pristine sands of Ramapuram Beach."
             light
           />

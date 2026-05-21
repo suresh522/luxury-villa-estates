@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import villaLiving from "@/assets/villa-living.jpg";
-import villaBedroom from "@/assets/villa-bedroom.jpg";
-import villaBathroom from "@/assets/villa-bathroom.jpg";
-import poolBar from "@/assets/pool-bar.jpg";
-import coupleBeach from "@/assets/couple-beach.jpg";
+// import villaLiving from "@/assets/villa-living.jpg";
+// import villaBedroom from "@/assets/villa-bedroom.jpg";
+// import villaBathroom from "@/assets/villa-bathroom.jpg";
+// import poolBar from "@/assets/pool-bar.jpg";
+// import coupleBeach from "@/assets/couple-beach.jpg";
+
+import villaLiving from "@/assets/hero-slider-1.jpeg";
+import villaBedroom from "@/assets/villa-2.jpeg";
+import villaBathroom from "@/assets/villa-3.jpeg";
+import poolBar from "@/assets/villa-4.jpeg";
+import coupleBeach from "@/assets/villa-5.jpeg";
 
 const images = [
   { src: villaLiving, alt: "Villa living room", span: "md:col-span-2 md:row-span-2" },

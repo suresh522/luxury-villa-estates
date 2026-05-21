@@ -5,10 +5,17 @@ import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import { UtensilsCrossed, Wine, Leaf, Clock } from "lucide-react";
 
-import beachDining from "@/assets/beach-fine-dining.jpg";
-import diningExp from "@/assets/dining-experience.jpg";
-import poolBar from "@/assets/pool-bar.jpg";
-import villaOpen from "@/assets/villa-open-living.jpg";
+// import beachDining from "@/assets/beach-fine-dining.jpg";
+// import diningExp from "@/assets/dining-experience.jpg";
+// import poolBar from "@/assets/pool-bar.jpg";
+// import villaOpen from "@/assets/villa-open-living.jpg";
+
+
+
+import beachDining from "@/assets/villa-4.jpeg";
+import diningExp from "@/assets/villa-6.jpeg";
+import poolBar from "@/assets/hero-slider-1.jpeg";
+import villaOpen from "@/assets/villa-5.jpeg";
 
 const menus = [
   {
@@ -48,7 +55,7 @@ const Dining = () => {
       </Helmet>
       <Navbar />
 
-      <ParallaxSection image={beachDining} className="pt-40 pb-20">
+      <ParallaxSection image={beachDining} className="pt-40 pb-20 h-[85vh]">
         <SectionHeading
           subtitle="Culinary Excellence"
           title="Fine Dining & Experiences"

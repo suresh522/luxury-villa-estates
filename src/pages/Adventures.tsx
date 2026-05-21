@@ -5,7 +5,8 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Anchor, Wind, Fish, Sailboat, Mountain, Sunrise } from "lucide-react";
-import adventureImg from "@/assets/adventure-sports.jpg";
+// import adventureImg from "@/assets/adventure-sports.jpg";
+import adventureImg from "@/assets/hero-slider-2.jpeg";
 
 const adventures = [
   { icon: Sailboat, title: "Jet Skiing", price: "₹2,500/ride", duration: "30 min", desc: "Thrilling high-speed jet ski rides along the Chirala coastline with professional instructors." },
@@ -26,12 +27,12 @@ const Adventures = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[50vh] lg:h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] lg:h-[85vh] flex items-center justify-center overflow-hidden">
         <img src={adventureImg} alt="Adventure Sports at RiO" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy))] via-[hsl(var(--navy))/0.3] to-transparent" />
         <div className="relative z-10 text-center text-primary-foreground px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Adventure & Water Sports</h1>
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">Adrenaline-pumping activities on the pristine waters of Chirala</p>
+          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">Adrenaline pumping activities on the pristine waters of Chirala</p>
         </div>
       </section>
 

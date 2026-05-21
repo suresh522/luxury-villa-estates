@@ -5,12 +5,20 @@ import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import { Waves, Camera, Palette, Music, Compass, Sparkles } from "lucide-react";
 
-import waterSports from "@/assets/water-sports.jpg";
-import coupleBeach from "@/assets/couple-beach.jpg";
-import beachDining from "@/assets/beach-fine-dining.jpg";
-import villaTwilight from "@/assets/villa-twilight.jpg";
-import cabanaBeach from "@/assets/cabana-beach.jpg";
-import villaExterior from "@/assets/villa-exterior-pool.jpg";
+// import waterSports from "@/assets/water-sports.jpg";
+// import coupleBeach from "@/assets/couple-beach.jpg";
+// import beachDining from "@/assets/beach-fine-dining.jpg";
+// import villaTwilight from "@/assets/villa-twilight.jpg";
+// import cabanaBeach from "@/assets/cabana-beach.jpg";
+// import villaExterior from "@/assets/villa-exterior-pool.jpg";
+
+
+import waterSports from "@/assets/villa-5.jpeg";
+import coupleBeach from "@/assets/hero-slider-2.jpeg";
+import beachDining from "@/assets/resort-lobby.jpeg";
+import villaTwilight from "@/assets/cabana-beach.jpeg";
+import cabanaBeach from "@/assets/pool-bar.jpeg";
+import villaExterior from "@/assets/villa-exterior-pool.jpeg";
 
 const experiences = [
   {
@@ -62,7 +70,7 @@ const Experiences = () => {
       </Helmet>
       <Navbar />
 
-      <ParallaxSection image={waterSports} className="pt-40 pb-20">
+      <ParallaxSection image={waterSports} className="pt-40 pb-20 h-[85vh]">
         <SectionHeading
           subtitle="Adventures Await"
           title="Curated Experiences"

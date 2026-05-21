@@ -1,14 +1,19 @@
 import { MapPin, Clock, Car, Plane } from "lucide-react";
 import ImageSlider from "@/components/ImageSlider";
 
-import aerialResort from "@/assets/aerial-resort.jpg";
-import locationSlide1 from "@/assets/location-slide-1.jpg";
-import locationSlide2 from "@/assets/location-slide-2.jpg";
-import locationSlide3 from "@/assets/location-slide-3.jpg";
+import aerialResort from "@/assets/hero-slider-1.jpeg";
+import locationSlide1 from "@/assets/location-slide-1.jpeg";
+import locationSlide2 from "@/assets/location-slide-2.jpeg";
+import locationSlide3 from "@/assets/location-slide-3.jpeg";
+
+// import aerialResort from "@/assets/aerial-resort.jpg";
+// import locationSlide1 from "@/assets/location-slide-1.jpg";
+// import locationSlide2 from "@/assets/location-slide-2.jpg";
+// import locationSlide3 from "@/assets/location-slide-3.jpg";
 
 const locationImages = [
   { src: aerialResort, alt: "Aerial view of RiO Pool Villas" },
-  { src: locationSlide1, alt: "Beachfront resort aerial panorama" },
+  { src: locationSlide1, alt: "Beachaccess resort aerial panorama" },
   { src: locationSlide2, alt: "Luxury coastal resort with infinity pool" },
   { src: locationSlide3, alt: "Resort entrance at dusk" },
 ];

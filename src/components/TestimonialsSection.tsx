@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Priya Sharma",
     location: "Hyderabad",
-    text: "An absolutely magical experience! The private pool villa exceeded all our expectations. The staff was incredibly attentive and the beachfront location is breathtaking.",
+    text: "An absolutely magical experience! The private pool villa exceeded all our expectations. The staff was incredibly attentive and the beachaccess location is breathtaking.",
     rating: 5,
   },
   {

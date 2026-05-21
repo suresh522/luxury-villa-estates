@@ -241,3 +241,7 @@
 .bg-primary {
     background-color: hsl(var(--primary));
 }
+
+.pt-40 {
+    padding-top: 13rem !important;
+}

@@ -5,9 +5,15 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Heart, Music, Camera, Utensils, Users, Star, Sparkles, Flower2 } from "lucide-react";
-import weddingVenue from "@/assets/wedding-venue.jpg";
-import honeymoonPkg from "@/assets/honeymoon-package.jpg";
-import corporateEvents from "@/assets/corporate-events.jpg";
+
+// import weddingVenue from "@/assets/wedding-venue.jpg";
+// import honeymoonPkg from "@/assets/honeymoon-package.jpg";
+// import corporateEvents from "@/assets/corporate-events.jpg";
+
+
+import weddingVenue from "@/assets/hero-slider-1.jpeg";
+import honeymoonPkg from "@/assets/villa-1.jpeg";
+import corporateEvents from "@/assets/hero-slider-3.jpeg";
 
 const packages = [
   {
@@ -52,7 +58,7 @@ const WeddingEvents = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] lg:h-[85vh] flex items-center justify-center overflow-hidden">
         <img src={weddingVenue} alt="Beach Wedding at RiO Pool Villas" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy))] via-[hsl(var(--navy))/0.4] to-transparent" />
         <div className="relative z-10 text-center text-primary-foreground px-4">

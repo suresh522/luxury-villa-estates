@@ -19,8 +19,10 @@ import AboutPreviewSection from "@/components/AboutPreviewSection";
 import VillaSliderSection from "@/components/VillaSliderSection";
 import { allVillas } from "@/data/villas";
 
-import poolBar from "@/assets/pool-bar.jpg";
-import coupleBeach from "@/assets/couple-beach.jpg";
+import poolBar from "@/assets/pool-bar.jpeg";
+import coupleBeach from "@/assets/hero-slider-1.jpeg";
+
+// import coupleBeach from "@/assets/couple-beach.jpg";
 
 const Index = () => {
   const featuredVillas = allVillas.slice(0, 4);
@@ -58,7 +60,7 @@ const Index = () => {
                 "name": "Does RiO Pool Villas offer wedding and event services?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, RiO Pool Villas offers complete wedding and event planning services including beachfront ceremonies, reception arrangements, catering, décor, and accommodation packages for guests."
+                  "text": "Yes, RiO Pool Villas offers complete wedding and event planning services including beachaccess ceremonies, reception arrangements, catering, décor, and accommodation packages for guests."
                 }
               },
               {

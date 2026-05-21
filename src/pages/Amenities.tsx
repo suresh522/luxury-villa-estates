@@ -11,12 +11,20 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 
-import amenityHero from "@/assets/amenity-hero.jpg";
-import amenityPool from "@/assets/amenity-private-pool.jpg";
-import amenityFitness from "@/assets/amenity-fitness.jpg";
-import amenityConcierge from "@/assets/amenity-concierge.jpg";
-import amenityFamily from "@/assets/amenity-family.jpg";
-import amenityLounge from "@/assets/amenity-lounge.jpg";
+// import amenityHero from "@/assets/amenity-hero.jpg";
+// import amenityPool from "@/assets/amenity-private-pool.jpg";
+// import amenityFitness from "@/assets/amenity-fitness.jpg";
+// import amenityConcierge from "@/assets/amenity-concierge.jpg";
+// import amenityFamily from "@/assets/amenity-family.jpg";
+// import amenityLounge from "@/assets/amenity-lounge.jpg";
+
+
+import amenityHero from "@/assets/pool-bar.jpeg";
+import amenityPool from "@/assets/villa-1.jpeg";
+import amenityFitness from "@/assets/villa-5.jpeg";
+import amenityConcierge from "@/assets/villa-6.jpeg";
+import amenityFamily from "@/assets/villa-3.jpeg";
+import amenityLounge from "@/assets/cabana-beach.jpeg";
 
 /* ── data ─────────────────────────────────────────── */
 const showcaseAmenities = [
@@ -46,7 +54,7 @@ const showcaseAmenities = [
   },
   {
     image: amenityLounge,
-    title: "Beachfront Lounge & Bar",
+    title: "Beachaccess Lounge & Bar",
     desc: "Sip hand-crafted cocktails as the sun dips below the horizon. Our oceanfront lounge offers the perfect blend of relaxation and sophistication.",
     features: ["Signature cocktails", "Sunset cabanas", "Live acoustic sessions", "Premium spirit selection"],
   },
@@ -86,7 +94,7 @@ const Amenities = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] lg:h-[85vh] flex items-center justify-center overflow-hidden">
         <img src={amenityHero} alt="RiO Pool Villas aerial resort view" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/70" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -199,7 +207,7 @@ const Amenities = () => {
               },
               {
                 heading: "Pool Villas Facilities",
-                items: ["Oceanview fitness center", "Beachfront lounge & bar", "Kids' club & splash pool", "Curated library lounge", "Landscaped tropical gardens", "Outdoor event pavilion", "Bicycle rentals", "Water sports equipment"],
+                items: ["Oceanview fitness center", "Beachaccess lounge & bar", "Kids' club & splash pool", "Curated library lounge", "Landscaped tropical gardens", "Outdoor event pavilion", "Bicycle rentals", "Water sports equipment"],
               },
             ].map((col) => (
               <div key={col.heading} className="bg-card rounded-2xl p-8 shadow-md">

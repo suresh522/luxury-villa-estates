@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 
-import heroSlide1 from "@/assets/hero-slide-1.jpg";
-import heroSlide2 from "@/assets/hero-slide-2.jpg";
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
-import heroSlide4 from "@/assets/hero-slide-4.jpg";
+import heroSlide1 from "@/assets/hero-slider-1.jpeg";
+import heroSlide2 from "@/assets/hero-slider-2.jpeg";
+import heroSlide3 from "@/assets/hero-slider-3.jpeg";
+import heroSlide4 from "@/assets/hero-slider-4.jpeg";
 
 const slides = [
   {

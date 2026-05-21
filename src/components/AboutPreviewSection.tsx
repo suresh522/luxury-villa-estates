@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Star } from "lucide-react";
-import aboutAerial from "@/assets/about-resort-aerial.jpg";
-import resortLobby from "@/assets/resort-lobby.jpg";
+import aboutAerial from "@/assets/about-resort-aerial.jpeg";
+import resortLobby from "@/assets/resort-lobby.jpeg";
 
 const AboutPreviewSection = () => {
   return (

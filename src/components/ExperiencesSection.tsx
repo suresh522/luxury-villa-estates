@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Waves, UtensilsCrossed, Dumbbell, Palmtree } from "lucide-react";
-import spaImg from "@/assets/spa-wellness.jpg";
-import diningImg from "@/assets/dining-experience.jpg";
-import waterImg from "@/assets/water-sports.jpg";
-import yogaImg from "@/assets/yoga-wellness.jpg";
+// import spaImg from "@/assets/spa-wellness.jpg";
+// import diningImg from "@/assets/dining-experience.jpg";
+// import waterImg from "@/assets/water-sports.jpg";
+// import yogaImg from "@/assets/yoga-wellness.jpg";
+
+import spaImg from "@/assets/hero-slider-3.jpeg";
+import diningImg from "@/assets/hero-slider-1.jpeg";
+import waterImg from "@/assets/hero-slider-2.jpeg";
+import yogaImg from "@/assets/hero-slider-4.jpeg";
 
 const experiences = [
   {

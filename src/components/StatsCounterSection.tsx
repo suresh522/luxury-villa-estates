@@ -7,7 +7,7 @@ const StatsCounterSection = () => {
     { value: "4.9", label: "Guest Rating" },
     { value: "24/7", label: "Concierge" },
     { value: "3", label: "Dining Venues" },
-    { value: "100%", label: "Beachfront" },
+    { value: "100%", label: "Beachaccess" },
   ];
 
   return (

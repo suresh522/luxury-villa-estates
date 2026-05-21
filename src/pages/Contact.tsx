@@ -10,7 +10,10 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 
-import parallaxDining from "@/assets/parallax-dining.jpg";
+// import parallaxDining from "@/assets/parallax-dining.jpg";
+
+
+import parallaxDining from "@/assets/hero-slider-3.jpeg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -47,7 +50,7 @@ const Contact = () => {
       </Helmet>
       <Navbar />
 
-      <ParallaxSection image={parallaxDining} className="pt-40 pb-20">
+      <ParallaxSection image={parallaxDining} className="pt-40 pb-20 h-[85vh]">
         <SectionHeading subtitle="Get in Touch" title="Contact Us" description="Plan your luxury escape at RiO Pool Villas. We're here to make your dream vacation a reality." light />
       </ParallaxSection>
 

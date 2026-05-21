@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import { allVillas } from "@/data/villas";
 
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
+import heroSlide3 from "@/assets/hero-slider-3.jpeg";
 
 const Villas = () => {
   return (
@@ -19,7 +19,7 @@ const Villas = () => {
       </Helmet>
       <Navbar />
 
-      <ParallaxSection image={heroSlide3} className="pt-40 pb-20">
+      <ParallaxSection image={heroSlide3} className="pt-40 pb-20 h-[85vh]">
         <SectionHeading
           subtitle="Our Collection"
           title="Luxury Pool Villas"

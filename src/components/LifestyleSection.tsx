@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import infinityPool from "@/assets/infinity-pool-sunset.jpg";
-import cabanaBeach from "@/assets/cabana-beach.jpg";
-import beachDining from "@/assets/beach-dining-night.jpg";
+// import infinityPool from "@/assets/infinity-pool-sunset.jpg";
+import infinityPool from "@/assets/villa-5.jpeg";
+import cabanaBeach from "@/assets/hero-slider-2.jpeg";
+// import beachDining from "@/assets/beach-dining-night.jpg";
+import beachDining from "@/assets/villa-4.jpeg";
+
+
+
 
 const LifestyleSection = () => {
   return (

@@ -12,9 +12,10 @@ interface VillaCardProps {
   bathrooms: number;
   guests: number;
   area: string;
+  pool: number;
 }
 
-const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, guests, area }: VillaCardProps) => {
+const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, guests, area, pool }: VillaCardProps) => {
   return (
     <div className="group bg-card rounded-lg overflow-hidden hover-lift" style={{ boxShadow: 'var(--shadow-card)' }}>
       <Link to={`/villa/${id}`}>
@@ -40,10 +41,11 @@ const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, 
 
         <div className="grid grid-cols-4 gap-2 mb-6">
           {[
-            { icon: Bed, value: bedrooms, label: "Beds" },
+            { icon: Bed, value: bedrooms, label: "Room" },
             { icon: Bath, value: bathrooms, label: "Baths" },
             { icon: Users, value: guests, label: "Guests" },
-            { icon: Maximize, value: area, label: "sqft" },
+            // { icon: Maximize, value: area, label: "sqft" },
+              { icon: Maximize, value: pool, label: "pool" },
           ].map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
               <Icon className="w-4 h-4 text-primary mx-auto mb-1" />

@@ -5,7 +5,8 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Baby, Waves, Palette, TreePine, Gamepad2, BookOpen, ShieldCheck, Clock } from "lucide-react";
-import kidsImg from "@/assets/kids-activities.jpg";
+// import kidsImg from "@/assets/kids-activities.jpg";
+import kidsImg from "@/assets/villa-3.jpeg";
 
 const activities = [
   { icon: Waves, title: "Splash Pool & Water Play", desc: "Dedicated kids pool with splash pads and water slides in a safe, supervised environment.", age: "3-12 years" },
@@ -26,7 +27,7 @@ const KidsActivities = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] lg:h-[85vh] flex items-center justify-center overflow-hidden">
         <img src={kidsImg} alt="Kids Activities at RiO Pool Villas" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--navy))] via-[hsl(var(--navy))/0.3] to-transparent" />
         <div className="relative z-10 text-center text-primary-foreground px-4">

@@ -5,29 +5,50 @@ import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 import AmenitiesSection from "@/components/AmenitiesSection";
 import { Shield, Heart, Leaf, Users, Globe, Sparkles, Award, Star, CheckCircle, Quote } from "lucide-react";
-
 import ImageSlider from "@/components/ImageSlider";
 
-import heroSlide4 from "@/assets/hero-slide-4.jpg";
-import villaLiving from "@/assets/villa-living.jpg";
-import teamStaff from "@/assets/team-staff.jpg";
-import coupleBeach from "@/assets/couple-beach.jpg";
-import spaWellness from "@/assets/spa-wellness.jpg";
-import poolBar from "@/assets/pool-bar.jpg";
-import diningExp from "@/assets/dining-experience.jpg";
-import conciergeLobby from "@/assets/concierge-lobby.jpg";
-import aerialResort from "@/assets/aerial-resort.jpg";
-import infinityPool from "@/assets/infinity-pool-sunset.jpg";
-import promiseSlide1 from "@/assets/promise-slide-1.jpg";
-import promiseSlide2 from "@/assets/promise-slide-2.jpg";
-import promiseSlide3 from "@/assets/promise-slide-3.jpg";
+
+
+// import heroSlide4 from "@/assets/hero-slider-4.jpeg";
+// import villaLiving from "@/assets/villa-living.jpg";
+// import teamStaff from "@/assets/team-staff.jpg";
+// import coupleBeach from "@/assets/couple-beach.jpg";
+// import spaWellness from "@/assets/spa-wellness.jpg";
+// import poolBar from "@/assets/pool-bar.jpg";
+// import diningExp from "@/assets/dining-experience.jpg";
+// import conciergeLobby from "@/assets/concierge-lobby.jpg";
+// import aerialResort from "@/assets/aerial-resort.jpg";
+// import infinityPool from "@/assets/infinity-pool-sunset.jpg";
+// import promiseSlide1 from "@/assets/promise-slide-1.jpg";
+// import promiseSlide2 from "@/assets/promise-slide-2.jpg";
+// import promiseSlide3 from "@/assets/promise-slide-3.jpg";
+// import founderPortrait from "@/assets/founder-portrait.jpg";
+
+
+
+
+
+
+import heroSlide4 from "@/assets/hero-slider-4.jpeg";
+import villaLiving from "@/assets/resort-lobby.jpeg";
+import teamStaff from "@/assets/hero-slider-3.jpeg";
+import coupleBeach from "@/assets/villa-6.jpeg";
+import spaWellness from "@/assets/villa-5.jpeg";
+import poolBar from "@/assets/villa-1.jpeg";
+import diningExp from "@/assets/villa-2.jpeg";
+import conciergeLobby from "@/assets/hero-slider-3.jpeg";
+import aerialResort from "@/assets/cabana-beach.jpeg";
+import infinityPool from "@/assets/location-slide-1.jpeg";
+import promiseSlide1 from "@/assets/promise-slide-1.jpeg";
+import promiseSlide2 from "@/assets/villa-6.jpeg";
+import promiseSlide3 from "@/assets/cabana-beach.jpeg";
 import founderPortrait from "@/assets/founder-portrait.jpg";
 
 const promiseImages = [
   { src: infinityPool, alt: "Infinity pool at sunset" },
   { src: promiseSlide1, alt: "Luxury villa pool sunset view" },
   { src: promiseSlide2, alt: "Premium villa bedroom ocean view" },
-  { src: promiseSlide3, alt: "Beachfront spa wellness" },
+  { src: promiseSlide3, alt: "Beachaccess spa wellness" },
 ];
 
 const About = () => {
@@ -181,7 +202,7 @@ const About = () => {
           <SectionHeading subtitle="A Day at RiO" title="Your Perfect Day" description="Experience a typical day of luxury and relaxation at our pool villas ." />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { time: "6:00 AM", title: "Sunrise Yoga", desc: "Begin your day with beachfront yoga and meditation.", image: spaWellness },
+              { time: "6:00 AM", title: "Sunrise Yoga", desc: "Begin your day with beachaccess yoga and meditation.", image: spaWellness },
               { time: "9:00 AM", title: "Gourmet Breakfast", desc: "Enjoy a curated breakfast by the pool or in your villa.", image: diningExp },
               { time: "2:00 PM", title: "Beach & Pool", desc: "Relax by your private pool or explore the pristine beach.", image: poolBar },
               { time: "7:00 PM", title: "Sunset Dinner", desc: "Indulge in a candlelit dinner as the sun sets.", image: coupleBeach },

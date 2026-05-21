@@ -5,25 +5,47 @@ import Footer from "@/components/Footer";
 import SectionHeading from "@/components/SectionHeading";
 import ParallaxSection from "@/components/ParallaxSection";
 
-import villa1 from "@/assets/villa-1.jpg";
-import villa2 from "@/assets/villa-2.jpg";
-import villa3 from "@/assets/villa-3.jpg";
-import villa4 from "@/assets/villa-4.jpg";
-import villa5 from "@/assets/villa-5.jpg";
-import villa6 from "@/assets/villa-6.jpg";
-import heroSlide1 from "@/assets/hero-slide-1.jpg";
-import heroSlide2 from "@/assets/hero-slide-2.jpg";
-import heroSlide3 from "@/assets/hero-slide-3.jpg";
-import heroSlide4 from "@/assets/hero-slide-4.jpg";
-import villaLiving from "@/assets/villa-living.jpg";
-import villaBedroom from "@/assets/villa-bedroom.jpg";
-import villaBathroom from "@/assets/villa-bathroom.jpg";
-import diningExp from "@/assets/dining-experience.jpg";
-import spaWellness from "@/assets/spa-wellness.jpg";
-import poolBar from "@/assets/pool-bar.jpg";
-import waterSports from "@/assets/water-sports.jpg";
-import coupleBeach from "@/assets/couple-beach.jpg";
-import yogaWellness from "@/assets/yoga-wellness.jpg";
+// import villa1 from "@/assets/villa-1.jpg";
+// import villa2 from "@/assets/villa-2.jpg";
+// import villa3 from "@/assets/villa-3.jpg";
+// import villa4 from "@/assets/villa-4.jpg";
+// import villa5 from "@/assets/villa-5.jpg";
+// import villa6 from "@/assets/villa-6.jpg";
+// import heroSlide1 from "@/assets/hero-slider-1.jpeg";
+// import heroSlide2 from "@/assets/hero-slider-2.jpeg";
+// import heroSlide3 from "@/assets/hero-slider-3.jpeg";
+// import heroSlide4 from "@/assets/hero-slider-4.jpeg";
+// import villaLiving from "@/assets/villa-living.jpg";
+// import villaBedroom from "@/assets/villa-bedroom.jpg";
+// import villaBathroom from "@/assets/villa-bathroom.jpg";
+// import diningExp from "@/assets/dining-experience.jpg";
+// import spaWellness from "@/assets/spa-wellness.jpg";
+// import poolBar from "@/assets/pool-bar.jpg";
+// import waterSports from "@/assets/water-sports.jpg";
+// import coupleBeach from "@/assets/couple-beach.jpg";
+// import yogaWellness from "@/assets/yoga-wellness.jpg";
+
+
+
+import villa1 from "@/assets/villa-1.jpeg";
+import villa2 from "@/assets/villa-2.jpeg";
+import villa3 from "@/assets/villa-3.jpeg";
+import villa4 from "@/assets/villa-4.jpeg";
+import villa5 from "@/assets/villa-5.jpeg";
+import villa6 from "@/assets/villa-6.jpeg";
+import heroSlide1 from "@/assets/hero-slider-1.jpeg";
+import heroSlide2 from "@/assets/hero-slider-2.jpeg";
+import heroSlide3 from "@/assets/hero-slider-3.jpeg";
+import heroSlide4 from "@/assets/hero-slider-4.jpeg";
+import villaLiving from "@/assets/location-slide-1.jpeg";
+import villaBedroom from "@/assets/location-slide-1.jpeg";
+import villaBathroom from "@/assets/villa-bathroom.jpeg";
+import diningExp from "@/assets/villa-4.jpeg";
+import spaWellness from "@/assets/hero-slider-2.jpeg";
+import poolBar from "@/assets/pool-bar.jpeg";
+import waterSports from "@/assets/villa-1.jpeg";
+import coupleBeach from "@/assets/cabana-beach.jpeg";
+import yogaWellness from "@/assets/hero-slider-1.jpeg";
 
 const categories = ["All", "Villas", "Pool", "Beach", "Interiors", "Dining", "Wellness"];
 
