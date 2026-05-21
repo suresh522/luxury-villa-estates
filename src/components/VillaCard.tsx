@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Bed, Bath, Users, Maximize } from "lucide-react";
+import { Bed, Bath, Users, Maximize,Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface VillaCardProps {
@@ -44,8 +44,8 @@ const VillaCard = ({ id, title, description, image, price, bedrooms, bathrooms, 
             { icon: Bed, value: bedrooms, label: "Room" },
             { icon: Bath, value: bathrooms, label: "Baths" },
             { icon: Users, value: guests, label: "Guests" },
-            // { icon: Maximize, value: area, label: "sqft" },
-              { icon: Maximize, value: pool, label: "pool" },
+            { icon: Maximize, value: area, label: "sqft" },
+            { icon: Waves, value: pool, label: "pool" },
           ].map(({ icon: Icon, value, label }) => (
             <div key={label} className="text-center">
               <Icon className="w-4 h-4 text-primary mx-auto mb-1" />

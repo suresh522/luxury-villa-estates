@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useState, useMemo } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Bed, Bath, Users, Maximize, ChevronLeft, ChevronRight, Check, Calendar, Phone, Mail } from "lucide-react";
+import { Bed, Bath, Users, Maximize, ChevronLeft, ChevronRight, Check, Calendar, Phone, Mail, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -120,10 +120,11 @@ const VillaDetail = () => {
                 </h1>
                 <div className="flex flex-wrap gap-6 text-muted-foreground">
                   {[
-                    { icon: Bed, value: villa.bedrooms, label: "Bedrooms" },
+                    { icon: Bed, value: villa.bedrooms, label: "Room" },
                     { icon: Bath, value: villa.bathrooms, label: "Bathrooms" },
                     { icon: Users, value: villa.guests, label: "Guests" },
                     { icon: Maximize, value: villa.area, label: "sqft" },
+                    { icon: Waves, value: villa.pool, label: "pool" },
                   ].map(({ icon: Icon, value, label }) => (
                     <div key={label} className="flex items-center gap-2">
                       <Icon className="w-4 h-4 text-primary" />
@@ -159,7 +160,7 @@ const VillaDetail = () => {
               <div>
                 <h2 className="font-display text-2xl font-semibold text-foreground mb-4">House Rules</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-muted-foreground">
-                  <p>✓ Check-in: 2:00 PM</p>
+                  <p>✓ Check-in: 12:00 PM</p>
                   <p>✓ Check-out: 11:00 AM</p>
                   <p>✓ No smoking indoors</p>
                   <p>✓ Pets allowed on request</p>

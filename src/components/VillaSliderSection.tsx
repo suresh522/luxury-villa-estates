@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight, Bed, Bath, Users } from "lucide-react";
+import { ChevronLeft, ChevronRight, Bed, Bath, Users, Waves } from "lucide-react";
 import { allVillas } from "@/data/villas";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -108,6 +108,9 @@ const VillaSliderSection = () => {
                       </span>
                       <span className="flex items-center gap-1">
                         <Users className="w-3.5 h-3.5" /> {villa.guests} Guests
+                      </span>
+                       <span className="flex items-center gap-1">
+                        <Waves className="w-3.5 h-3.5" /> {villa.pool} Pool
                       </span>
                     </div>
                   </div>

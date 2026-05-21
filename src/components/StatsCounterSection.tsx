@@ -3,7 +3,7 @@ import villaTwilight from "@/assets/villa-twilight.jpg";
 const StatsCounterSection = () => {
   const stats = [
     { value: "1000+", label: "Happy Guests" },
-    { value: "6", label: "Luxury Villas" },
+    { value: "4", label: "Luxury Villas" },
     { value: "4.9", label: "Guest Rating" },
     { value: "24/7", label: "Concierge" },
     { value: "3", label: "Dining Venues" },
