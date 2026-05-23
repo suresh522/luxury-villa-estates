@@ -18,7 +18,7 @@ const VillaDetail = () => {
   const [activeImage, setActiveImage] = useState(0);
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
-  const [guestCount, setGuestCount] = useState(2);
+  const [guestCount, setGuestCount] = useState(4);
 
   const nights = useMemo(() => {
     if (!checkIn || !checkOut) return 0;

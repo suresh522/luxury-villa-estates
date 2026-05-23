@@ -84,7 +84,7 @@ const About = () => {
                 {[
                   { value: "5+", label: "Years of Excellence" },
                   { value: "1000+", label: "Happy Guests" },
-                  { value: "4.9★", label: "Guest Rating" },
+                  { value: "5★", label: "Guest Rating" },
                 ].map((stat) => (
                   <div key={stat.label}>
                     <p className="text-2xl font-extrabold text-primary">{stat.value}</p>

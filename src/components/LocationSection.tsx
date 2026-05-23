@@ -56,7 +56,7 @@ const LocationSection = () => {
                 { icon: Plane, label: "Vijayawada Airport", value: "~2.5 hrs drive" },
                 { icon: Car, label: "From Hyderabad", value: "~5 hrs drive" },
                 { icon: MapPin, label: "Chirala Railway Station", value: "~20 min drive" },
-                { icon: Clock, label: "Check-in / Check-out", value: "2:00 PM / 11:00 AM" },
+                { icon: Clock, label: "Check-in / Check-out", value: "12:00 PM / 11:00 AM" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">

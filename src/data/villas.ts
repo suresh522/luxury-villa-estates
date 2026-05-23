@@ -21,7 +21,7 @@ import villa6 from "@/assets/villa-6.jpeg";
 import villaBedroom from "@/assets/hero-slider-3.jpeg";
 import villaBathroom from "@/assets/villa-bathroom.jpeg";
 import villaLiving from "@/assets/villa-4.jpeg";
-import poolBar from "@/assets/pool-bar.jpg";
+import poolBar from "@/assets/villa-5.jpeg";
 
 export interface Villa {
   id: string;
@@ -76,7 +76,7 @@ export const allVillas: Villa[] = [
   {
     id: "royal-terrace",
     // title: "Royal Terrace Villa",
-    title: "Mini kids villa",
+    title: "Mini kids pool",
     description: "Two story villa with rooftop jacuzzi, private garden, and outdoor dining area.",
     longDescription: "The Royal Terrace Villa is our most expansive property, spread across two levels with a rooftop terrace featuring a private jacuzzi and 360-degree views. The ground floor opens onto a lush private garden with an outdoor dining area perfect for alfresco meals prepared by our chef. Four bedrooms with premium bedding, a spacious living room, and a modern kitchen make this the ultimate group retreat.",
     image: villa3,
@@ -94,8 +94,8 @@ export const allVillas: Villa[] = [
     id: "spa retreat",
     // title: "Spa Retreat Villa",
     title: "Dining set villa",
-    description: "Wellness focused villa with private spa area, meditation garden, and beach access.",
-    longDescription: "The Spa Retreat Villa is a haven of wellness and tranquility. Featuring a dedicated private spa area with treatment room, a zen meditation garden, and direct beach access, this villa is designed for those seeking rejuvenation. The interiors use natural materials and calming tones, while the outdoor rain shower and yoga deck add to the holistic experience.",
+    description: "Elegant beach villa featuring modern amenities, cozy interiors, and stunning coastal views for a relaxing stay.",
+    longDescription: "The Retreat Villa is a perfect blend of luxury, comfort, and peaceful coastal living. Featuring spacious interiors, elegant modern design, and direct beach access, this villa is ideal for families and travelers seeking a relaxing getaway. The interiors are designed with natural textures, warm lighting, and calming tones to create a welcoming atmosphere. Guests can enjoy beautiful outdoor seating areas, refreshing ocean views, and premium amenities that ensure a memorable and comfortable stay throughout their vacation.",
     image: villa4,
     gallery: [villa4, villaBathroom, villaLiving, villaBedroom],
     // price: 22000,

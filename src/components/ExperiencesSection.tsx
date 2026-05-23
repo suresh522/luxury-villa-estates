@@ -24,12 +24,12 @@ const experiences = [
     description: "Candlelit beachside dinners and poolside brunches with locally sourced ingredients.",
     image: diningImg,
   },
-  {
-    icon: Dumbbell,
-    title: "Spa & Wellness",
-    description: "Rejuvenate with traditional Ayurvedic treatments and modern wellness therapies.",
-    image: spaImg,
-  },
+  // {
+  //   icon: Dumbbell,
+  //   title: "Spa & Wellness",
+  //   description: "Rejuvenate with traditional Ayurvedic treatments and modern wellness therapies.",
+  //   image: spaImg,
+  // },
   {
     icon: Palmtree,
     title: "Yoga & Meditation",

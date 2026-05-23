@@ -21,11 +21,11 @@ const features = [
     title: "Prime Location",
     description: "Nestled along pristine Ramapuram Beach with easy access from Hyderabad and Vijayawada.",
   },
-  {
-    icon: Headphones,
-    title: "Personalized Service",
-    description: "Customized experiences from airport transfers to in-villa dining and cultural excursions.",
-  },
+  // {
+  //   icon: Headphones,
+  //   title: "Personalized Service",
+  //   description: "Customized experiences from airport transfers to in-villa dining and cultural excursions.",
+  // },
   {
     icon: Award,
     title: "Award-Winning Design",

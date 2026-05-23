@@ -56,7 +56,7 @@ const AboutPreviewSection = () => {
               {[
                 { icon: Award, value: "Award", label: "Winning pool villas" },
                 { icon: Users, value: "1000+", label: "Happy Guests" },
-                { icon: Star, value: "4.9★", label: "Guest Rating" },
+                { icon: Star, value: "5★", label: "Guest Rating" },
               ].map((item) => (
                 <div
                   key={item.label}

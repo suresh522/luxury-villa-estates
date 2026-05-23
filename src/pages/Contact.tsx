@@ -85,7 +85,7 @@ const Contact = () => {
                 {
                   icon: Clock,
                   title: "Office Hours",
-                  content: "24/7 We never sleep, so you can rest easy",
+                  content: "24/7 availability",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 mb-6">
@@ -145,7 +145,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <label className="text-xs font-body font-medium text-foreground mb-1.5 block">Number of Guests</label>
-                      <Input name="guests" type="number" value={formData.guests} onChange={handleChange} placeholder="2" min="1" max="20" className="rounded-lg" />
+                      <Input name="guests" type="number" value={formData.guests} onChange={handleChange} placeholder="4" min="1" max="20" className="rounded-lg" />
                     </div>
                   </div>
 
