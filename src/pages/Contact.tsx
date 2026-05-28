@@ -108,7 +108,7 @@ const Contact = () => {
               {/* Map embed */}
               <div className="rounded-lg overflow-hidden aspect-video">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.0!2d80.35!3d15.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDQ5JzQ4LjAiTiA4MMKwMjEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.682017049706!2d80.35824207465072!3d15.767952147433927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a45003f6d1e27%3A0x31af00d7e10b5bd3!2sRIO%20Pool%20Villas!5e0!3m2!1sen!2sin!4v1779942804790!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
